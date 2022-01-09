@@ -74,20 +74,20 @@ export default function NavBar() {
               <Button
                 key={page}
                 onClick={() => { console.log(page) }}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 3, color: 'white', display: 'block' }}
               >
                 {page}
               </Button>
             ))}
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <Button sx={{ my: 2, color: 'white' }}>
+            <Button sx={{ my: 3, color: 'white' }}>
               LOGO
             </Button>
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Button
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{ my: 3, color: 'white', display: 'block' }}
             >
               END
             </Button>

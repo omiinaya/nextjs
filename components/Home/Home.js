@@ -1,5 +1,6 @@
 import NavBar from '../NavBar/NavBar'
 import AboutMe from '../AboutMe/AboutMe'
+import Box from '@mui/material/Box';
 import style from "./Home.module.scss";
 
 export default function Home() {
@@ -8,9 +9,14 @@ export default function Home() {
       <div className={style.NavBar}>
         <NavBar />
       </div>
-      <div className={style.Title}>
+      <Box
+        className={style.Title}
+        sx={{
+          ml: { xs: 'none', sm: '70px', md: '250px' },
+          mr: { xs: 'none', sm: '70px', md: '250px' }
+        }}>
         .About Me
-      </div>
+      </Box>
       <div className={style.AboutMe}>
         <AboutMe />
       </div>
