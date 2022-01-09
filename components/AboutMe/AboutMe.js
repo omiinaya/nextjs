@@ -21,9 +21,7 @@ export default function AboutMe() {
                         display="flex"
                         justifyContent="left"
                     >
-                        <Typography className={style.title}>
-                            .About Me
-                        </Typography>
+                        <Breadcrumb current={'About Me'} />
                     </Box>
                 </Box>
             </Box>
@@ -32,10 +30,8 @@ export default function AboutMe() {
                 sx={{
                     ml: { xs: 'none', sm: '50px', md: '70px', lg: '70px' },
                     mr: { xs: 'none', sm: '50px', md: '70px', lg: '70px' },
-                    p: '50px',
-                    pt: '15px'
+                    p: '50px'
                 }}>
-                <Breadcrumb current={'About Me'} />
                 <Box>
                     <Box
                         display="flex"
@@ -56,7 +52,7 @@ export default function AboutMe() {
                         </Avatar>
                         <Box display='inline'>
                             <Typography sx={{ ml: '50px', mb: '40px' }}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna nec lacus varius semper et nec urna. Proin accumsan lacinia vulputate. Maecenas quis tristique urna. Duis lobortis sit amet nisl nec convallis. Cras vehicula nisi eget tempus sagittis. Maecenas finibus ligula sit amet ultrices condimentum. Suspendisse semper elementum lectus. Nulla ornare est ante, quis mollis lectus lobortis in. Cras id malesuada velit. Duis viverra quam sapien, sit amet blandit enim pellentesque eget. Ut ac nunc non velit venenatis faucibus ut at libero.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna nec lacus varius semper et nec urna. Proin accumsan lacinia vulputate. Maecenas quis tristique urna. Duis lobortis sit amet nisl nec convallis. Cras vehicula nisi eget tempus sagittis. Maecenas finibus ligula sit amet ultrices condimentum. Suspendisse semper elementum lectus. Nulla ornare est ante, quis mollis lectus lobortis in. Cras id malesuada velit.
                             </Typography>
                             <Typography sx={{ ml: '50px' }}>
                                 <LinkedInIcon sx={{

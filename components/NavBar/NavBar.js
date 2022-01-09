@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Skills', 'Certificates', 'Portfolio', 'About Me', 'Contact Me'];
+const pages = ['About Me', 'Skills', 'Certificates', 'Portfolio', 'Contact Me'];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
