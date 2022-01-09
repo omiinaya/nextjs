@@ -14,7 +14,7 @@ export default function AboutMe() {
                 textAlign="center"
                 sx={{ mb: '50px' }}
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis, turpis quis aliquam sodales, est neque egestas arcu, sit amet vulputate enim odio vitae neque. Fusce sit amet erat pellentesque, placerat felis sed, molestie ex. Fusce dui orci, volutpat non ante in, efficitur accumsan erat. Nam mattis arcu vitae sapien tempus scelerisque. Integer accumsan luctus felis a aliquet. Sed consequat ornare maximus. Integer mollis tincidunt dolor. Duis tristique feugiat odio non bibendum. Ut placerat tempor nunc non interdum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Morbi facilisis, turpis quis aliquam sodales, est neque egestas arcu, sit amet vulputate enim odio vitae neque. Fusce sit amet erat pellentesque, placerat felis sed, molestie ex. Fusce dui orci, volutpat non ante in, efficitur accumsan erat. Nam mattis arcu vitae sapien tempus scelerisque. Integer accumsan luctus felis a aliquet. Sed consequat ornare maximus. Integer mollis tincidunt dolor. Duis tristique feugiat odio non bibendum.
             </Typography>
             <Typography
                 textAlign="center"
@@ -26,7 +26,7 @@ export default function AboutMe() {
                 textAlign="center"
                 sx={{ mb: '30px' }}
             >
-                Cras euismod in tellus non aliquet. Etiam tincidunt, elit sit amet commodo rutrum, enim nunc lobortis tellus, et cursus ex leo quis dui. Integer aliquet massa vel ligula lobortis, vitae vestibulum dolor dapibus. Integer hendrerit, mauris a suscipit mollis, est mauris egestas sapien, quis pulvinar nibh libero ut tortor. In erat tellus, porta et erat eget, fringilla maximus metus.
+                Cras euismod in tellus non aliquet. Etiam tincidunt, elit sit amet commodo rutrum, enim nunc lobortis tellus, et cursus ex leo quis dui. Integer aliquet massa vel ligula lobortis, vitae vestibulum dolor dapibus. Integer accumsan luctus felis a aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat tempor nunc non interdum. Fusce sit amet erat pellentesque, placerat felis sed, molestie ex. Integer hendrerit, mauris a suscipit mollis, est mauris egestas sapien, quis pulvinar nibh libero ut tortor. Integer mollis tincidunt dolor. In erat tellus, porta et erat eget, fringilla maximus metus.
             </Typography>
         </Box >
     )
