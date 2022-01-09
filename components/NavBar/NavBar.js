@@ -1,4 +1,5 @@
 import * as React from 'react';
+import style from "./NavBar.module.scss";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -25,10 +26,7 @@ export default function NavBar() {
 
 
   return (
-    <AppBar sx={{
-      position: 'fixed',
-      backgroundColor: 'rgba(0, 0, 0, .90)'
-    }}>
+    <Box className={style.root}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1 }}>
@@ -97,6 +95,6 @@ export default function NavBar() {
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
+    </Box>
   );
 };

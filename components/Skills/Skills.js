@@ -1,9 +1,6 @@
-import Typography from '@mui/material/Typography';
 import style from "./Skills.module.scss";
 import Box from '@mui/material/Box';
 import Breadcrumb from '../Breadcrumb/Breadcrumb'
-import CodeIcon from '@mui/icons-material/Code';
-import Test from '../Test/Test'
 
 export default function Skills() {
 
