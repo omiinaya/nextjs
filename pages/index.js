@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Home from '../components/Home/Home'
+import NavBar from '../components/NavBar/NavBar'
+import AboutMe from '../components/AboutMe/AboutMe'
+import Skills from '../components/Skills/Skills'
 
 export default function App() {
   return (
@@ -8,7 +10,9 @@ export default function App() {
         <title>Omar Minaya | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Home />
+      <NavBar />
+      <AboutMe />
+      <Skills />
     </div>
   )
 }
