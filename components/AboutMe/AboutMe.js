@@ -24,9 +24,9 @@ export default function AboutMe() {
             </Typography>
             <Typography
                 textAlign="center"
-                sx={{ mb: '50px' }}
+                sx={{ mb: '30px' }}
             >
-                Cras euismod in tellus non aliquet. Integer aliquet massa vel ligula lobortis, vitae vestibulum dolor dapibus. Integer hendrerit, mauris a suscipit mollis, est mauris egestas sapien, quis pulvinar nibh libero ut tortor. In erat tellus, porta et erat eget, fringilla maximus metus.
+                Cras euismod in tellus non aliquet. Etiam tincidunt, elit sit amet commodo rutrum, enim nunc lobortis tellus, et cursus ex leo quis dui. Integer aliquet massa vel ligula lobortis, vitae vestibulum dolor dapibus. Integer hendrerit, mauris a suscipit mollis, est mauris egestas sapien, quis pulvinar nibh libero ut tortor. In erat tellus, porta et erat eget, fringilla maximus metus.
             </Typography>
         </Box >
     )
