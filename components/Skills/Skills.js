@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Slide from '@mui/material/Slide';
 import Fade from '@mui/material/Fade';
 import Breadcrumb from '../Breadcrumb/Breadcrumb'
+import CodeIcon from '@mui/icons-material/Code';
 import Test from '../Test/Test'
 
 export default function Skills() {
@@ -32,7 +33,20 @@ export default function Skills() {
             }}>
                 <Slide direction="up" in={mainSlide} className={style.root}>
                     <Box>
-                        <Typography textAlign="center" className={style.title}>.Skills {'</>'}</Typography>
+                        <Box
+                            display="flex"
+                            justifyContent="center"
+                        >
+                            <Typography textAlign="center" className={style.title}>
+                                .Skills 
+                            </Typography>
+                            <CodeIcon sx={{
+                                height: '70px',
+                                width: '70px',
+                                ml: '20px'
+                            }}
+                            />
+                        </Box>
                         <Test />
                     </Box>
                 </Slide>
