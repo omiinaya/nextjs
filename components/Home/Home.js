@@ -1,4 +1,5 @@
 import NavBar from '../NavBar/NavBar'
+import AboutMe from '../AboutMe/AboutMe'
 import style from "./Home.module.scss";
 
 export default function Home() {
@@ -7,8 +8,8 @@ export default function Home() {
       <div className={style.NavBar}>
         <NavBar />
       </div>
-      <div>
-        test
+      <div className={style.AboutMe}>
+        <AboutMe />
       </div>
     </div>
   )
