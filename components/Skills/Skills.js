@@ -22,23 +22,8 @@ export default function Skills() {
                 mr: { xs: 'none', sm: '50px', md: '70px', lg: '70px' }
             }}>
                 <Box className={style.root}>
-                    <Box
-                        display="flex"
-                        justifyContent="center"
-                    >
-                        <Typography textAlign="center" className={style.title}>
-                            .Skills
-                        </Typography>
-                        <CodeIcon sx={{
-                            height: '70px',
-                            width: '70px',
-                            ml: '20px'
-                        }}
-                        />
-                    </Box>
                     test
                 </Box>
-
             </Box>
         </Box>
     )
