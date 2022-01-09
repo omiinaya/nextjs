@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['About Me', 'Portfolio', 'Certificates', 'Contact Me'];
+const pages = ['About Me', 'Skills', 'Portfolio', 'Certificates', 'Contact Me'];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,7 +25,10 @@ export default function NavBar() {
 
 
   return (
-    <AppBar position="inherit">
+    <AppBar sx={{
+      position: 'fixed',
+      backgroundColor: 'rgba(0, 0, 0, .90)'
+    }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1 }}>

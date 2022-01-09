@@ -5,7 +5,8 @@ import AboutMe from '../AboutMe/AboutMe'
 import Box from '@mui/material/Box';
 import Slide from '@mui/material/Slide';
 import Fade from '@mui/material/Fade';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import Portfolio from '../Portfolio/Portfolio'
+import Skills from '../Skills/Skills'
 import style from "./Home.module.scss";
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
         display="flex"
         justifyContent="center"
         sx={{
-          mt: "90px"
+          m: "90px"
         }}
       >
         <Avatar
@@ -50,7 +51,9 @@ export default function Home() {
           variant="rounded"
         />
       </Box>
-
+      <Box>
+        <Skills />
+      </Box>
     </div>
   )
 }
