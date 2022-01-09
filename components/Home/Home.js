@@ -13,7 +13,7 @@ export default function Home() {
         className={style.Title}
         sx={{
           ml: { xs: 'none', sm: '70px', md: '150px', lg: '250px'},
-          mr: { xs: 'none', sm: '70px', md: '150px', lg: '250px' }
+          mr: { xs: 'none', sm: '70px', md: '150px', lg: '250px'}
         }}>
         .About Me
       </Box>

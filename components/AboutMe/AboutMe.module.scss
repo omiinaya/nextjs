@@ -1,11 +1,15 @@
 .root {
-    padding: 20px;
-    border: 2px solid rgba(255, 255, 255, .90);
-    background-color: rgba(0, 0, 0, .95);
-    height: inherit
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
+    height: inherit;
 }
 
 .title {
     font-family: monospace;
-    font-size: 50px
+    height: 50px;
+    font-size: 50px;
+    margin-top: -10px !important;
+    margin-bottom: 50px !important;
+    padding: 0 !important;
+    text-align: center
 }
