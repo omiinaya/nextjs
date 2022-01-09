@@ -6,6 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/pickers": "^3.3.10",
+    "@mui/icons-material": "next",
+    "@mui/material": "next",
     "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2",
