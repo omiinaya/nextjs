@@ -8,6 +8,9 @@ export default function Home() {
       <div className={style.NavBar}>
         <NavBar />
       </div>
+      <div className={style.Title}>
+        .About Me
+      </div>
       <div className={style.AboutMe}>
         <AboutMe />
       </div>
