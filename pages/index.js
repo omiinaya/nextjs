@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import NavBar from '../components/NavBar/NavBar'
-import Skills from '../components/Skills/Skills'
 import Home from '../components/Home/Home'
 
 export default function App() {
@@ -12,9 +11,6 @@ export default function App() {
       </Head>
       <NavBar />
       <Home />
-      {/*
-      <Skills />
-      */}
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import style from "./Home.module.scss";
+//import style from "./Home.module.scss";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
@@ -7,20 +7,20 @@ import AvatarImage from "../../assets/imgs/avatar.png"
 export default function Home() {
     return (
         <Box
-            className={style.rootHome}
+            className='rootHome'
             sx={{
                 p: { xs: 'none', sm: 'none', md: '60px', lg: '60px' },
             }}
         >
-            <Typography textAlign='center' className={style.headerHome}>
+            <Typography textAlign='center' className='headerHome'>
                 FULLSTACK DEVELOPER
             </Typography>
-            <Typography textAlign='center' className={style.titleHome}>
+            <Typography textAlign='center' className='titleHome'>
                 OMAR
             </Typography>
             <Typography
                 textAlign='center'
-                className={style.contentHome}
+                className='contentHome'
                 sx={{
                     ml: { xs: 'none', sm: 'none', md: '30px', lg: '300px' },
                     mr: { xs: 'none', sm: 'none', md: '30px', lg: '300px' },
@@ -35,7 +35,7 @@ export default function Home() {
                 <Avatar
                     alt="Omar Minaya"
                     src={AvatarImage.src}
-                    className={style.avatarHome}
+                    className='avatarHome'
                 />
             </Box>
         </Box>

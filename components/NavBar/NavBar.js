@@ -1,5 +1,4 @@
 import * as React from 'react';
-import style from "./NavBar.module.scss";
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -23,9 +22,8 @@ export default function NavBar() {
     setAnchorElNav(null);
   };
 
-
   return (
-    <Box className={style.rootNavBar}>
+    <Box className='rootNavBar'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1 }}>
