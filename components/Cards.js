@@ -18,19 +18,23 @@ const icon = (
     </Paper>
 );
 
+const cards = ['JavaScript', 'React', 'HTML', 'CSS']
+
 export default function SimpleGrow(props) {
     return (
-        <Box sx={{ height: 180 }}>
+        <Box m={'60px'} >
             <Box sx={{ display: 'flex' }}>
-                <Grow in={props.visible}>{icon}</Grow>
-                {/* Conditionally applies the timeout prop to change the entry speed. */}
-                <Grow
-                    in={props.visible}
-                    style={{ transformOrigin: '0 0 0' }}
-                    {...(props.visible ? { timeout: 1000 } : {})}
-                >
-                    {icon}
-                </Grow>
+                {cards.map((card, index) => (
+                    <Grow
+                        in={props.visible}
+                        key={card}
+                        style={{ transformOrigin: '0 0 0' }}
+                        {...(props.visible ? { timeout: (index+1) * 500 } : {})}
+                    >
+                        {icon}
+                    </Grow>
+                ))}
+
             </Box>
         </Box>
     );
