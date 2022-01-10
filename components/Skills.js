@@ -4,14 +4,12 @@ import Cards from './Cards';
 import VisibilitySensor from 'react-visibility-sensor';
 
 export default function SimpleGrow() {
-    const [visible, setVisible] = useState(false);
+    const [visible1, setVisible1] = useState(false);
     const [visible2, setVisible2] = useState(false);
     const [visible3, setVisible3] = useState(false);
-    const [visible4, setVisible4] = useState(false);
-    const cards1 = ['JavaScript', 'Node', 'React', 'HTML', 'CSS']
-    const cards2 = ['MySQL', 'Sequelize', 'MongoDB', 'MSSQL', 'JSON']
-    const cards3 = ['NextJS', 'React-Native', 'JQuery', 'Bootstrap', 'MDB']
-    const cards4 = ['Python', 'Java', 'Electron', 'Git', 'Express']
+    const cards1 = ['JavaScript', 'React', 'Node', 'Electron', 'Python', 'Java']
+    const cards2 = ['MySQL', 'Sequelize', 'MongoDB', 'Express', 'Git', 'JSON']
+    const cards3 = ['NextJS', 'React-Native', 'Bootstrap', 'JQuery', 'HTML', 'CSS']
 
     return (
         <Box sx={{
@@ -22,9 +20,9 @@ export default function SimpleGrow() {
                 justifyContent='center'
             >
                 <VisibilitySensor
-                    onChange={(e) => { if (e) setVisible(e) }}
+                    onChange={(e) => { if (e) setVisible1(e) }}
                 >
-                    <Cards cards={cards1} visible={visible} />
+                    <Cards cards={cards1} visible={visible1} />
                 </VisibilitySensor>
             </Box>
             <Box
@@ -45,16 +43,6 @@ export default function SimpleGrow() {
                     onChange={(e) => { if (e) setVisible3(e) }}
                 >
                     <Cards cards={cards3} visible={visible3} />
-                </VisibilitySensor>
-            </Box>
-            <Box
-                display='flex'
-                justifyContent='center'
-            >
-                <VisibilitySensor
-                    onChange={(e) => { if (e === true) setVisible4(e) }}
-                >
-                    <Cards cards={cards4} visible={visible4} />
                 </VisibilitySensor>
             </Box>
         </Box>
