@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Fade from '@mui/material/Fade';
 import Slide from '@mui/material/Slide';
+import Image from 'next/image'
 import AvatarImage from "../public/static/imgs/avatar.png"
 
 export default function Home() {
@@ -47,10 +48,12 @@ export default function Home() {
             </Slide>
             <Slide direction="up" in={bottom}>
                 <Box className='avatarContainer'>
-                    <img
+                    <Image
                         alt="Omar Minaya"
                         src={AvatarImage.src}
                         className='avatarHome'
+                        width={250}
+                        height={250}
                     />
                 </Box>
             </Slide>
