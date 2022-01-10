@@ -19,7 +19,7 @@ export default function Cards(props) {
                                 {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                             >
                                 <Paper sx={{ m: 1 }} elevation={4}>
-                                    <Box sx={{ width: 130, height: 170 }}>
+                                    <Box sx={{ width: 120, height: 170 }}>
                                         {card}
                                     </Box>
                                 </Paper>
@@ -38,7 +38,7 @@ export default function Cards(props) {
                                 {...(props.visible ? { timeout: (index + 4) * 500 } : {})}
                             >
                                 <Paper sx={{ m: 1 }} elevation={4}>
-                                    <Box sx={{ width: 130, height: 170 }}>
+                                    <Box sx={{ width: 120, height: 170 }}>
                                         {card}
                                     </Box>
                                 </Paper>
