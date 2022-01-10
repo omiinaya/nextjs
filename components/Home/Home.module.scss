@@ -19,9 +19,7 @@
     font-family: 'Barlow-Regular';
     padding-top: 10px;
     font-size: 18px;
-    //border: 2px solid white;
     padding: 10px;
-    //background-color: rgba(0, 0, 0, .70);
     backdrop-filter: blur(5px);
 }
 
@@ -29,4 +27,6 @@
     margin-top: 80px;
     height: 250px;
     width: 250px;
+    border: 10px solid transparent;
+    outline: 3px solid white;
 }
