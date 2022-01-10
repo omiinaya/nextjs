@@ -7,20 +7,20 @@ import AvatarImage from "../../assets/imgs/avatar.png"
 export default function Home() {
     return (
         <Box
-            className={style.root}
+            className={style.rootHome}
             sx={{
                 p: { xs: 'none', sm: 'none', md: '60px', lg: '60px' },
             }}
         >
-            <Typography textAlign='center' className={style.header}>
+            <Typography textAlign='center' className={style.headerHome}>
                 FULLSTACK DEVELOPER
             </Typography>
-            <Typography textAlign='center' className={style.title}>
+            <Typography textAlign='center' className={style.titleHome}>
                 OMAR
             </Typography>
             <Typography
                 textAlign='center'
-                className={style.content}
+                className={style.contentHome}
                 sx={{
                     ml: { xs: 'none', sm: 'none', md: '30px', lg: '300px' },
                     mr: { xs: 'none', sm: 'none', md: '30px', lg: '300px' },
@@ -35,7 +35,7 @@ export default function Home() {
                 <Avatar
                     alt="Omar Minaya"
                     src={AvatarImage.src}
-                    className={style.avatar}
+                    className={style.avatarHome}
                 />
             </Box>
         </Box>
