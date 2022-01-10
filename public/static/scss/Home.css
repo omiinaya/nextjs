@@ -33,8 +33,10 @@
     border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
-    -webkit-border-radius: 50%;
-    -khtml-border-radius: 50%;
+    -webkit-border-radius: 50% !important;
+    -webkit-outline-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
+    -khtml-outline-radius: 50% !important;
 }
 
 .avatarHome img {
@@ -42,7 +44,9 @@
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
     -webkit-border-radius: 50% !important;
+    -webkit-outline-radius: 50% !important;
     -khtml-border-radius: 50% !important;
+    -khtml-outline-radius: 50% !important;
 }
 
 .avatarContainer {
@@ -50,7 +54,9 @@
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
     -webkit-border-radius: 50% !important;
+    -webkit-outline-radius: 50% !important;
     -khtml-border-radius: 50% !important;
+    -khtml-outline-radius: 50% !important;
 }
 
 .avatarContainer img {
@@ -58,7 +64,9 @@
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
     -webkit-border-radius: 50% !important;
+    -webkit-outline-radius: 50% !important;
     -khtml-border-radius: 50% !important;
+    -khtml-outline-radius: 50% !important;
 }
 
 .MuiAvatar-img {
@@ -66,6 +74,7 @@
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
     -webkit-border-radius: 50% !important;
+    -webkit-outline-radius: 50% !important;
     -khtml-border-radius: 50% !important;
-    vertical-align: middle;
+    -khtml-outline-radius: 50% !important;
 }
