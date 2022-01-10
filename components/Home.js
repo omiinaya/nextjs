@@ -50,6 +50,7 @@ export default function Home() {
                 <Box
                     display='flex'
                     justifyContent='center'
+                    className='avatarContainer'
                 >
                     <Avatar
                         alt="Omar Minaya"

@@ -34,3 +34,9 @@
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
 }
+
+.avatarContainer {
+    border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -moz-outline-radius: 50% !important;
+}
