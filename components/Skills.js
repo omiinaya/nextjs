@@ -12,9 +12,7 @@ export default function SimpleGrow() {
     const cards3 = ['NextJS', 'React-Native', 'Bootstrap', 'JQuery', 'HTML', 'CSS']
 
     return (
-        <Box sx={{
-            height: 'fit-content'
-        }}>
+        <Box>
             <VisibilitySensor
                 onChange={(e) => { if (e) setVisible1(e) }}
             >
