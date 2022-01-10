@@ -1,31 +1,31 @@
 .rootHome {
-    justify-content: center;
-    margin: 30px
+    justify-content: center !important;
+    margin: 30px !important;
 }
 
 .headerHome {
-    font-family: 'BarlowCondensed-Regular';
-    font-size: 30px;
-    letter-spacing: 10px;
+    font-family: 'BarlowCondensed-Regular' !important;
+    font-size: 30px !important;
+    letter-spacing: 10px !important;
 }
 
 .titleHome {
-    font-family: 'Bellefair-Regular';
-    font-size: 90px
+    font-family: 'Bellefair-Regular' !important;
+    font-size: 90px !important;
 }
 
 .contentHome {
-    font-family: 'Barlow-Regular';
-    padding-top: 10px;
-    font-size: 18px;
-    padding: 10px;
-    backdrop-filter: blur(5px);
+    font-family: 'Barlow-Regular' !important;
+    padding-top: 10px !important;
+    font-size: 18px !important;
+    padding: 10px !important;
+    backdrop-filter: blur(5px) !important;
 }
 
 .avatarHome {
-    margin-top: 80px;
-    height: 250px;
-    width: 250px;
-    border: 10px solid transparent;
-    outline: 3px solid white;
+    margin-top: 80px !important;
+    height: 250px !important;
+    width: 250px !important;
+    border: 10px solid transparent !important;
+    outline: 3px solid white !important;
 }
