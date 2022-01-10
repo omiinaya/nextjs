@@ -37,12 +37,28 @@
     -khtml-border-radius: 50%;
 }
 
+.avatarHome img {
+    border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -moz-outline-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
+}
+
 .avatarContainer {
     border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
-    -webkit-border-radius: 50%;
-    -khtml-border-radius: 50%;
+    -webkit-border-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
+}
+
+.avatarContainer img {
+    border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -moz-outline-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
 }
 
 .MuiAvatar-img {
