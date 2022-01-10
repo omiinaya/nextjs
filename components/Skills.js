@@ -14,13 +14,15 @@ export default function SimpleGrow() {
     const cards4 = ['Python', 'Java', 'Electron', 'Git', 'Express']
 
     return (
-        <Box>
+        <Box sx={{
+            height: 'fit-content'
+        }}>
             <Box
                 display='flex'
                 justifyContent='center'
             >
                 <VisibilitySensor
-                    onChange={(e) => { if (e === true) setVisible(e) }}
+                    onChange={(e) => { if (e) setVisible(e) }}
                 >
                     <Cards cards={cards1} visible={visible} />
                 </VisibilitySensor>
@@ -30,7 +32,7 @@ export default function SimpleGrow() {
                 justifyContent='center'
             >
                 <VisibilitySensor
-                    onChange={(e) => { if (e === true) setVisible2(e) }}
+                    onChange={(e) => { if (e) setVisible2(e) }}
                 >
                     <Cards cards={cards2} visible={visible2} />
                 </VisibilitySensor>
@@ -40,7 +42,7 @@ export default function SimpleGrow() {
                 justifyContent='center'
             >
                 <VisibilitySensor
-                    onChange={(e) => { if (e === true) setVisible3(e) }}
+                    onChange={(e) => { if (e) setVisible3(e) }}
                 >
                     <Cards cards={cards3} visible={visible3} />
                 </VisibilitySensor>
