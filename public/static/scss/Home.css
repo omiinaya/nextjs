@@ -31,5 +31,6 @@
     border: 10px solid transparent !important;
     outline: 3px solid white !important;
     border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
 }
