@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
 import Fade from '@mui/material/Fade';
 import Slide from '@mui/material/Slide';
-import Image from 'next/image'
 import AvatarImage from "../public/static/imgs/avatar.png"
 
 export default function Home() {
@@ -22,7 +20,7 @@ export default function Home() {
         <Box
             className='rootHome'
             sx={{
-                p: { xs: 'none', sm: 'none', md: '60px', lg: '60px' },
+                p: { xs: '45px', sm: '45px', md: '60px', lg: '60px' },
             }}
         >
             <Fade in={upper}>
@@ -49,12 +47,10 @@ export default function Home() {
             </Slide>
             <Slide direction="up" in={bottom}>
                 <Box className='avatarContainer'>
-                    <Image
+                    <img
                         alt="Omar Minaya"
                         src={AvatarImage.src}
                         className='avatarHome'
-                        width={250}
-                        height={250}
                     />
                 </Box>
             </Slide>
