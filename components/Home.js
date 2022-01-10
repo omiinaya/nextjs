@@ -21,7 +21,8 @@ export default function Home() {
         <Box
             className='rootHome'
             sx={{
-                p: { xs: '45px', sm: '45px', md: '60px', lg: '60px' },
+                p: { xs: 'none', sm: 'none', md: '60px', lg: '60px' },
+                pt: { xs: '45px', sm: '45px', md: '60px', lg: '60px' }
             }}
         >
             <Fade in={upper}>
