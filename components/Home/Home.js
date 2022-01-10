@@ -2,7 +2,7 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
-import AvatarImage from "../../assets/imgs/avatar.png"
+import AvatarImage from "../../public/static/imgs/avatar.png"
 
 export default function Home() {
     return (

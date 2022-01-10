@@ -1,0 +1,32 @@
+@import url("./Home.css");
+@import url("./NavBar.css");
+
+@font-face {
+    font-family: "Bellefair-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Bellefair-Regular"), url(../fonts/Bellefair-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "BarlowCondensed-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("BarlowCondensed-Regular"), url(../fonts/BarlowCondensed-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Barlow-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Barlow-Regular"), url(../fonts/Barlow-Regular.ttf) format("truetype");
+}
+
+body {
+    background-image: url("../imgs/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    color: white;
+}
