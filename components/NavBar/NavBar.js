@@ -24,13 +24,19 @@ export default function NavBar() {
 
   return (
     <Box className='rootNavBar'>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
             <Button sx={{ my: 3, color: 'white', display: { xs: 'none', md: 'block' } }}>
               LOGO
             </Button>
-            <Box sx={{ color: 'white', display: { xs: 'block', md: 'none' } }}>
+            <Box sx={{
+              color: 'white',
+              display: {
+                xs: 'block',
+                md: 'none'
+              }
+            }}
+            >
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -91,7 +97,6 @@ export default function NavBar() {
             </Button>
           </Box>
         </Toolbar>
-      </Container>
     </Box>
   );
 };

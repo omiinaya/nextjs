@@ -3,6 +3,6 @@
     top: 0 !important;
     background-color: rgba(0, 0, 0, .50) !important;
     backdrop-filter: blur(4px) !important;
-    margin: 25px !important; 
+    margin: 25px !important;
     border: 2px solid white !important;
 }

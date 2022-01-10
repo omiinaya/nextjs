@@ -22,8 +22,8 @@ export default function Home() {
                 textAlign='center'
                 className='contentHome'
                 sx={{
-                    ml: { xs: 'none', sm: 'none', md: '30px', lg: '300px' },
-                    mr: { xs: 'none', sm: 'none', md: '30px', lg: '300px' },
+                    ml: { xs: 'none', sm: 'none', md: '30px', lg: '100px', xl: '300px'},
+                    mr: { xs: 'none', sm: 'none', md: '30px', lg: '100px', xl: '300px' },
                 }}
             >
                 I am a bilingual developer living in Miami, Florida. I was born in the Dominican Republic and my native language is Spanish. I studied Computer Science at Union University over in Jackson, Tennessee, then moved to Florida looking for IT opportunities. I ended up taking a coding bootcamp at University of Miami and fell in love with programming ever since.
@@ -36,6 +36,9 @@ export default function Home() {
                     alt="Omar Minaya"
                     src={AvatarImage.src}
                     className='avatarHome'
+                    sx={{
+                        mt: { xs: '30px', sm: '30px', md: '30px', lg: '70px', xl: '80px'},
+                    }}
                 />
             </Box>
         </Box>
