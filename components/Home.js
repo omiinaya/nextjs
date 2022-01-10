@@ -12,9 +12,9 @@ export default function Home() {
     const [bottom, setBottom] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setUpper(true), 150);
-        setTimeout(() => setMiddle(true), 300);
-        setTimeout(() => setBottom(true), 450);
+        setTimeout(() => setUpper(true), 250);
+        setTimeout(() => setMiddle(true), 500);
+        setTimeout(() => setBottom(true), 750);
     });
 
     return (
