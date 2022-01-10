@@ -1,5 +1,5 @@
 import CssBaseline from "@mui/material/CssBaseline";
-import "../scss/style.scss";
+import "./_app.css";
 
 function MyApp({ Component, pageProps }) {
   return (
