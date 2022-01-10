@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Fade from '@mui/material/Fade';
 import Slide from '@mui/material/Slide';
+import Image from 'next/image'
 import AvatarImage from "../public/static/imgs/avatar.png"
 
 export default function Home() {
@@ -47,18 +48,13 @@ export default function Home() {
                 </Typography>
             </Slide>
             <Slide direction="up" in={bottom}>
-                <Box
-                    display='flex'
-                    justifyContent='center'
-                    className='avatarContainer'
-                >
-                    <Avatar
+                <Box className='avatarContainer'>
+                    <Image
                         alt="Omar Minaya"
                         src={AvatarImage.src}
                         className='avatarHome'
-                        sx={{
-                            mt: { xs: '30px', sm: '30px', md: '30px', lg: '70px', xl: '80px' },
-                        }}
+                        width={250}
+                        height={250}
                     />
                 </Box>
             </Slide>
