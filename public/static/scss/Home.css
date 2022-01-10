@@ -5,18 +5,18 @@
 }
 
 .headerHome {
-    font-family: 'Barlow Condensed', sans-serif !important;
+    font-family: "Barlow Condensed", sans-serif !important;
     font-size: 30px !important;
     letter-spacing: 10px !important;
 }
 
 .titleHome {
-    font-family: 'Bellefair', serif !important;
+    font-family: "Bellefair", serif !important;
     font-size: 90px !important;
 }
 
 .contentHome {
-    font-family: 'Barlow', sans-serif !important;
+    font-family: "Barlow", sans-serif !important;
     padding-top: 10px !important;
     font-size: 18px !important;
     padding: 10px !important;
@@ -33,10 +33,23 @@
     border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
 }
 
 .avatarContainer {
     border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     -moz-outline-radius: 50% !important;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
+.MuiAvatar-img {
+    border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -moz-outline-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
+    vertical-align: middle;
 }
