@@ -1,8 +1,8 @@
-//import style from "./Home.module.scss";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import AvatarImage from "../../public/static/imgs/avatar.png"
+import Image from 'next/image'
 
 export default function Home() {
     return (
@@ -22,7 +22,7 @@ export default function Home() {
                 textAlign='center'
                 className='contentHome'
                 sx={{
-                    ml: { xs: 'none', sm: 'none', md: '30px', lg: '100px', xl: '300px'},
+                    ml: { xs: 'none', sm: 'none', md: '30px', lg: '100px', xl: '300px' },
                     mr: { xs: 'none', sm: 'none', md: '30px', lg: '100px', xl: '300px' },
                 }}
             >
@@ -34,12 +34,19 @@ export default function Home() {
             >
                 <Avatar
                     alt="Omar Minaya"
-                    src={AvatarImage.src}
+                    
                     className='avatarHome'
                     sx={{
-                        mt: { xs: '30px', sm: '30px', md: '30px', lg: '70px', xl: '80px'},
+                        mt: { xs: '30px', sm: '30px', md: '30px', lg: '70px', xl: '80px' },
                     }}
+                >
+                <Image
+                    src={AvatarImage.src}
+                    alt="Picture of the author"
+                    width={250}
+                    height={250}
                 />
+                </Avatar>
             </Box>
         </Box>
     )
