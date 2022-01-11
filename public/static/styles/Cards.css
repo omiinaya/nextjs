@@ -1,0 +1,21 @@
+.rootCardContainer {
+    margin: 5px !important;
+    background-color: transparent
+}
+
+.rootCard {
+    width: 130px; 
+    height: 170px;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(100px) !important;
+    box-shadow: 0px 0px 15px 15px rgba(0,0,0, 0.5);
+    color: white;
+    border: 3px solid white;
+    padding: 30px
+}
+
+.imageCard {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}

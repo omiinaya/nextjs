@@ -1,0 +1,59 @@
+.rootHome {
+    justify-content: center !important;
+    margin: 30px !important;
+}
+
+.headerHome {
+    font-family: "Barlow Condensed", sans-serif !important;
+    font-size: 30px !important;
+    letter-spacing: 15px !important;
+}
+
+.headerHomeContent{
+    display: inline-block;
+    backdrop-filter: blur(100px) !important;
+}
+
+.titleHome {
+    font-family: "Bellefair", serif !important;
+    font-size: 90px !important;
+}
+
+.contentHome {
+    font-family: "Barlow", sans-serif !important;
+    padding-top: 10px !important;
+    font-size: 18px !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+.avatarContainer {
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 250px;
+    height: 250px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border: 10px solid transparent !important;
+    outline: 3px solid white !important;
+    display: flex !important;
+    justify-content: center;
+    
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
+}
+
+.avatarHome {
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
+}
+
+.avatarHome img {
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -khtml-border-radius: 50% !important;
+}

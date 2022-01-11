@@ -2,6 +2,7 @@
 @import url("./NavBar.css");
 @import url("./Skills.css");
 @import url("./Cards.css");
+@import url("./Separator.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
@@ -13,7 +14,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center; 
-  //backdrop-filter:blur(2px);
   color: white !important;
 }
 

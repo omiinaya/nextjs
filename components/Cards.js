@@ -2,8 +2,6 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grow from '@mui/material/Grow';
 import Image from 'next/image'
-import AvatarImage from "../public/static/imgs/avatar.png"
-import ReactImage from "../public/static/imgs/icons/React.png"
 
 export default function Cards(props) {
     console.log(props.x['React'].default.src)

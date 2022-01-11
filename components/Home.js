@@ -18,18 +18,9 @@ export default function Home() {
     });
 
     return (
-        <Box
-            className='rootHome'
-            sx={{
-                p: { xs: 'none', sm: 'none', md: '60px', lg: '60px' },
-                pt: { xs: '45px', sm: '45px', md: '60px', lg: '60px' }
-            }}
-        >
+        <Box className='rootHome'>
             <Fade in={upper}>
                 <Box>
-                    <Typography textAlign='center' className='headerHome'>
-                        FULLSTACK DEVELOPER
-                    </Typography>
                     <Typography textAlign='center' className='titleHome'>
                         OMAR
                     </Typography>

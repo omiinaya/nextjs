@@ -1,0 +1,9 @@
+.rootNavBar {
+    position: fixed !important;
+    top: 0 !important;
+    backdrop-filter: blur(100px) !important;
+    width: calc(100% - 50px);
+    margin: 25px !important;
+    border: 2px solid white !important;
+    z-index: 2;
+}

@@ -3,8 +3,7 @@ import NavBar from '../components/NavBar'
 import Home from '../components/Home'
 import Skills from '../components/Skills'
 import Box from '@mui/material/Box';
-//import { useState } from 'react';
-//import VisibilitySensor from 'react-visibility-sensor';
+import Separator from '../components/Separator'
 
 export default function App() {
   //const [tab, setTab] = useState(false)
@@ -15,7 +14,9 @@ export default function App() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
+      <Separator text='FULLSTACK DEVELOPER' mt={20} mb={-1} mobilemt={20} mobilemb={5} />
       <Home />
+      <Separator text='RELEVANT SKILLS' mt={15} mb={15} mobilemt={5} mobilemb={5} />
       <Skills />
     </Box>
   )
