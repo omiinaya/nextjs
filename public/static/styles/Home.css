@@ -1,6 +1,6 @@
 .rootHome {
     margin: 30px !important;
-    margin-top: 15px !important;
+    margin-top: 30px !important;
 }
 
 .headerHome {
@@ -17,11 +17,11 @@
 .titleHome {
     font-family: "Bellefair", serif !important;
     font-size: 90px !important;
+    margin-bottom: 30px;
 }
 
 .contentHome {
     font-family: "Barlow", sans-serif !important;
-    padding-top: 10px !important;
     font-size: 18px !important;
     backdrop-filter: blur(5px) !important;
 }

@@ -14,11 +14,20 @@ export default function App() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <Separator text='FULLSTACK DEVELOPER' mt={20} mb={-1} mobilemt={20} mobilemb={-1} />
+      <div name='Home'>
+        <Separator text='FULLSTACK DEVELOPER' mt={25} mb={5} mobilemt={20} mobilemb={-1} />
+      </div>
       <Home />
-      <Separator text='RELEVANT SKILLS' mt={15} mb={15} mobilemt={5} mobilemb={5} />
+      <div name='Skills'>
+        <Separator
+          text='RELEVANT SKILLS' mt={15} mb={15} mobilemt={5} mobilemb={5}
+        />
+      </div>
       <Skills />
-      <Separator text='CERTIFICATES' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5} />
+      <Separator
+        text='CERTIFICATES' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
+        name='Certificates'
+      />
     </Box>
   )
 }
