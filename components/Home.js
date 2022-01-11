@@ -47,7 +47,7 @@ export default function Home() {
                     I am a bilingual developer living in Miami, Florida. I was born in the Dominican Republic and my native language is Spanish. I studied Computer Science at Union University over in Jackson, Tennessee, then moved to Florida looking for IT opportunities. I ended up taking a coding bootcamp at University of Miami and fell in love with programming ever since.
                 </Typography>
             </Slide>
-            <Slide direction="up" in={bottom}>
+            <Slide direction="up" in={bottom} >
                 <Box className='avatarContainer'>
                     <Image
                         alt="Omar Minaya"

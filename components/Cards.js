@@ -1,8 +1,13 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grow from '@mui/material/Grow';
+import Image from 'next/image'
+import AvatarImage from "../public/static/imgs/avatar.png"
+import ReactImage from "../public/static/imgs/icons/React.png"
 
 export default function Cards(props) {
+    console.log(props.x['React'].default.src)
+
     return (
         <Box>
             {props.mobile ? (
@@ -18,8 +23,15 @@ export default function Cards(props) {
                                 }}
                                 {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                             >
-                                <Paper sx={{ m: 1 }} elevation={4}>
-                                    <Box sx={{ width: 120, height: 170 }}>
+                                <Paper className="rootCardContainer">
+                                    <Box className="rootCard">
+                                        <Image
+                                            alt={card}
+                                            src={props.x[`${card}`].default.src}
+                                            className='imageCard'
+                                            width={250}
+                                            height={250}
+                                        />
                                         {card}
                                     </Box>
                                 </Paper>
@@ -37,8 +49,15 @@ export default function Cards(props) {
                                 }}
                                 {...(props.visible ? { timeout: (index + 4) * 500 } : {})}
                             >
-                                <Paper sx={{ m: 1 }} elevation={4}>
-                                    <Box sx={{ width: 120, height: 170 }}>
+                                <Paper className="rootCardContainer">
+                                    <Box className="rootCard">
+                                        <Image
+                                            alt={card}
+                                            src={props.x[`${card}`].default.src}
+                                            className='imageCard'
+                                            width={250}
+                                            height={250}
+                                        />
                                         {card}
                                     </Box>
                                 </Paper>
@@ -58,9 +77,18 @@ export default function Cards(props) {
                             }}
                             {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                         >
-                            <Paper sx={{ m: 1 }} elevation={4}>
-                                <Box sx={{ width: 130, height: 170 }}>
-                                    {card}
+                            <Paper className="rootCardContainer">
+                                <Box className="rootCard">
+                                    <Image
+                                        alt={card}
+                                        src={props.x[`${card}`].default.src}
+                                        className='imageCard'
+                                        width={70}
+                                        height={70}
+                                    />
+                                    <div>
+                                        {card}
+                                    </div>
                                 </Box>
                             </Paper>
                         </Grow>
