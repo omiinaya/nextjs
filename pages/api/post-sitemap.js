@@ -36,5 +36,4 @@ export default async (req, res) => {
     console.log(e)
     res.send(JSON.stringify(e))
   }
-
 }
