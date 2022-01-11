@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Fade from '@mui/material/Fade';
 import Slide from '@mui/material/Slide';
 import Image from 'next/image'
-import AvatarImage from "../public/static/imgs/avatar.png"
+import AvatarImage from "../public/static/imgs/avatar.webp"
 
 export default function Home() {
     const [upper, setUpper] = useState(false);
