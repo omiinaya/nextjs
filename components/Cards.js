@@ -4,7 +4,6 @@ import Grow from '@mui/material/Grow';
 import Image from 'next/image'
 
 export default function Cards(props) {
-    console.log(props)
     return (
         <Box>
             {props.mobile ? (
