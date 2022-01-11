@@ -11,6 +11,7 @@ export default function App() {
     <Box display="inline-block">
       <Head>
         <title>Omar Minaya | Portfolio</title>
+        <meta name="description" content="An example of a meta description. These show up in search engine results."></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
@@ -25,7 +26,7 @@ export default function App() {
       </div>
       <Skills />
       <Separator
-        text='CERTIFICATES' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
+        text='BADGES & CERTIFICATES' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
         name='Certificates'
       />
     </Box>
