@@ -17,7 +17,7 @@
 .titleHome {
     font-family: "Bellefair", serif !important;
     font-size: 90px !important;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
 }
 
 .contentHome {
