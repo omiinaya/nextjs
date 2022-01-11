@@ -17,7 +17,7 @@ export default function SimpleGrow() {
     const [visible3, setVisible3] = useState(false);
     const cards1 = ['JavaScript', 'React', 'Node', 'Electron', 'Python', 'Java']
     const cards2 = ['MySQL', 'Sequelize', 'MongoDB', 'Express', 'Git', 'JSON']
-    const cards3 = ['NextJS', 'React-Native', 'Bootstrap', 'JQuery', 'HTML', 'CSS']
+    const cards3 = ['NextJS', 'React Native', 'Bootstrap', 'JQuery', 'HTML', 'CSS']
 
     return (
         <Box>
