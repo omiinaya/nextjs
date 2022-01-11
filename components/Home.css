@@ -21,26 +21,21 @@
     width: 250px;
     height: 250px;
     background: transparent;
-    backdrop-filter: blur(15px);
-    border: 10px solid transparent !important;
-    outline: 3px solid white !important;
     display: flex !important;
     justify-content: center;
-    
+}
+
+.avatarBorder {
+    border: 10px solid transparent !important;
     border-radius: 50% !important;
     -webkit-border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     -khtml-border-radius: 50% !important;
+    box-shadow:
+    0 0 0 5px hsl(0, 0%, 90%);
 }
 
-.avatarHome {
-    border-radius: 50% !important;
-    -webkit-border-radius: 50% !important;
-    -moz-border-radius: 50% !important;
-    -khtml-border-radius: 50% !important;
-}
-
-.avatarHome img {
+.avatarBorder img {
     border-radius: 50% !important;
     -webkit-border-radius: 50% !important;
     -moz-border-radius: 50% !important;

@@ -40,12 +40,12 @@ export default function Home() {
             </Slide>
             <Slide direction="up" in={bottom} >
                 <Box className='avatarContainer'>
-                    <Image
+                    <img
                         alt="Omar Minaya"
                         src={AvatarImage.src}
-                        className='avatarHome'
-                        width={250}
-                        height={250}
+                        className='avatarBorder'
+                        width={260}
+                        height={260}
                     />
                 </Box>
             </Slide>
