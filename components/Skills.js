@@ -5,11 +5,11 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 function importAll(r) {
     let images = {};
-    r.keys().forEach((item, index) => { images[item.replace('./', '').replace('.png', '')] = r(item); });
+    r.keys().forEach((item, index) => { images[item.replace('./', '').replace('.webp', '')] = r(item); });
     return images
 }
 
-const images = importAll(require.context('../public/static/imgs/icons/', false, /\.(png|jpe?g|svg)$/))
+const images = importAll(require.context('../public/static/imgs/icons/', false, /\.(webp|jpe?g|svg)$/))
 
 export default function SimpleGrow() {
     const [visible1, setVisible1] = useState(false);
