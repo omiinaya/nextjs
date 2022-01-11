@@ -8,7 +8,7 @@ import Separator from '../components/Separator'
 export default function App() {
   //const [tab, setTab] = useState(false)
   return (
-    <Box>
+    <Box display="inline-block">
       <Head>
         <title>Omar Minaya | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,6 +18,7 @@ export default function App() {
       <Home />
       <Separator text='RELEVANT SKILLS' mt={15} mb={15} mobilemt={5} mobilemb={5} />
       <Skills />
+      <Separator text='CERTIFICATES' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5} />
     </Box>
   )
 }

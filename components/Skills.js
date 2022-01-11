@@ -21,77 +21,80 @@ export default function SimpleGrow() {
 
     return (
         <Box>
-            <VisibilitySensor
-                //partialVisibility={true}
-                onChange={(e) => {
-                    if (e) setVisible1(e)
-                }}
-            >
-                <Box
-                    display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
-                    justifyContent='center'
+            <Box
+                sx={{ height: { xs: '900px', sm: '900px', md: '645px', lg: '645px' } }}>
+                <VisibilitySensor
+                    //partialVisibility={true}
+                    onChange={(e) => {
+                        if (e) setVisible1(e)
+                    }}
                 >
-                    <Cards cards={cards1} visible={visible1} mobile={false} x={images}/>
-                </Box>
-            </VisibilitySensor>
-            <VisibilitySensor
-                //partialVisibility={true}
-                offset={{bottom: -175}}
-                onChange={(e) => { if (e) setVisible1(e) }}
-            >
-                <Box
-                    display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
-                    justifyContent='center'
+                    <Box
+                        display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
+                        justifyContent='center'
+                    >
+                        <Cards cards={cards1} visible={visible1} mobile={false} x={images} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    //partialVisibility={true}
+                    offset={{ bottom: -175 }}
+                    onChange={(e) => { if (e) setVisible1(e) }}
                 >
-                    <Cards cards={cards1} visible={visible1} mobile={true} x={images}/>
-                </Box>
-            </VisibilitySensor>
-            <VisibilitySensor
-                //partialVisibility={true}
-                onChange={(e) => { if (e) setVisible2(e) }}
-            >
-                <Box
-                    display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
-                    justifyContent='center'
+                    <Box
+                        display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
+                        justifyContent='center'
+                    >
+                        <Cards cards={cards1} visible={visible1} mobile={true} x={images} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    //partialVisibility={true}
+                    onChange={(e) => { if (e) setVisible2(e) }}
                 >
-                    <Cards cards={cards2} visible={visible2} mobile={false} x={images}/>
-                </Box>
-            </VisibilitySensor>
-            <VisibilitySensor
-                partialVisibility={true}
-                offset={{top:-50}}
-                onChange={(e) => { if (e) setVisible2(e) }}
-            >
-                <Box
-                    display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
-                    justifyContent='center'
+                    <Box
+                        display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
+                        justifyContent='center'
+                    >
+                        <Cards cards={cards2} visible={visible2} mobile={false} x={images} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    partialVisibility={true}
+                    offset={{ top: -50 }}
+                    onChange={(e) => { if (e) setVisible2(e) }}
                 >
-                    <Cards cards={cards2} visible={visible2} mobile={true} x={images}/>
-                </Box>
-            </VisibilitySensor>
-            <VisibilitySensor
-                //partialVisibility={true}
-                onChange={(e) => { if (e) setVisible3(e) }}
-            >
-                <Box
-                    display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
-                    justifyContent='center'
+                    <Box
+                        display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
+                        justifyContent='center'
+                    >
+                        <Cards cards={cards2} visible={visible2} mobile={true} x={images} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    //partialVisibility={true}
+                    onChange={(e) => { if (e) setVisible3(e) }}
                 >
-                    <Cards cards={cards3} visible={visible3} mobile={false} x={images}/>
-                </Box>
-            </VisibilitySensor>
-            <VisibilitySensor
-                partialVisibility={true}
-                offset={{top:-50}}
-                onChange={(e) => { if (e) setVisible3(e) }}
-            >
-                <Box
-                    display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
-                    justifyContent='center'
+                    <Box
+                        display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
+                        justifyContent='center'
+                    >
+                        <Cards cards={cards3} visible={visible3} mobile={false} x={images} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    partialVisibility={true}
+                    offset={{ top: -50 }}
+                    onChange={(e) => { if (e) setVisible3(e) }}
                 >
-                    <Cards cards={cards3} visible={visible3} mobile={true} x={images}/>
-                </Box>
-            </VisibilitySensor>
+                    <Box
+                        display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
+                        justifyContent='center'
+                    >
+                        <Cards cards={cards3} visible={visible3} mobile={true} x={images} />
+                    </Box>
+                </VisibilitySensor>
+            </Box>
         </Box>
     );
 }
