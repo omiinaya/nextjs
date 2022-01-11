@@ -1,6 +1,7 @@
 .rootCardContainer {
     margin: 5px !important;
-    background-color: transparent
+    background-color: transparent !important;
+    backdrop-filter: blur(100px) !important;
 }
 
 .rootCard {
@@ -8,7 +9,8 @@
     height: 170px;
     justify-content: center;
     text-align: center;
-    backdrop-filter: blur(100px) !important;
+    background-color: transparent !important;
+    
     color: white;
     border: 3px solid white;
     padding: 30px

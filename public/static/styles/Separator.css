@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     font-family: "Barlow Condensed", sans-serif !important;
-    font-size: 30px !important;
-    letter-spacing: 7px !important;
+    font-size: 20px !important;
+    letter-spacing: 5px !important;
 }
 
 .rootSeparator {
