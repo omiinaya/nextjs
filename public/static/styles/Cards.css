@@ -5,15 +5,14 @@
 }
 
 .rootCard {
-    width: 130px; 
-    height: 170px;
+    width: 110px; 
+    height: 155px;
     justify-content: center;
     text-align: center;
     background-color: transparent !important;
-    
+    padding-top: 25px;
     color: white;
     border: 3px solid white;
-    padding: 30px
 }
 
 .imageCard {

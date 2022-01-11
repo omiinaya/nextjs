@@ -25,10 +25,12 @@ export default function Cards(props) {
                                             alt={card}
                                             src={props.x[`${card}`].default.src}
                                             className='imageCard'
-                                            width={250}
-                                            height={250}
+                                            width={75}
+                                            height={75}
                                         />
-                                        {card}
+                                        <Box>
+                                            {card}
+                                        </Box>
                                     </Box>
                                 </Paper>
                             </Grow>
@@ -51,10 +53,12 @@ export default function Cards(props) {
                                             alt={card}
                                             src={props.x[`${card}`].default.src}
                                             className='imageCard'
-                                            width={250}
-                                            height={250}
+                                            width={75}
+                                            height={75}
                                         />
-                                        {card}
+                                        <Box>
+                                            {card}
+                                        </Box>
                                     </Box>
                                 </Paper>
                             </Grow>
