@@ -4,8 +4,6 @@ import Grow from '@mui/material/Grow';
 import Image from 'next/image'
 
 export default function Cards(props) {
-    console.log(props.x['React'].default.src)
-
     return (
         <Box>
             {props.mobile ? (

@@ -14,7 +14,7 @@ export default function App() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      <Separator text='FULLSTACK DEVELOPER' mt={20} mb={-1} mobilemt={20} mobilemb={5} />
+      <Separator text='FULLSTACK DEVELOPER' mt={20} mb={-1} mobilemt={20} mobilemb={-1} />
       <Home />
       <Separator text='RELEVANT SKILLS' mt={15} mb={15} mobilemt={5} mobilemb={5} />
       <Skills />
