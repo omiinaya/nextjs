@@ -1,8 +1,12 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grow from '@mui/material/Grow';
+import Slide from '@mui/material/Slide';
 
 export default function Certificate(props) {
+    function isEven(num) {
+        return num % 2
+    }
     return (
         <Box>
             {props.mobile ? (
@@ -33,7 +37,7 @@ export default function Certificate(props) {
                             <Grow
                                 in={props.visible}
                                 key={cert}
-                                {...(props.visible ? { timeout: (index + 3) * 500 } : {})}
+                                {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
                             >
                                 <Paper className="certificateContainer">
                                     <Box className="certificateCard">
@@ -52,22 +56,75 @@ export default function Certificate(props) {
                 </Box>
             ) : (
                 <Box sx={{ display: 'flex' }}>
-                    {props.certs.map((cert, index) => (
-                        <Grow
-                            in={props.visible}
-                            key={cert}
-                            {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
-                        >
-                            <Paper className="certificateContainer">
-                                <Box className="certificateCard">
-                                    <img
-                                        alt={cert}
-                                        src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                    />
-                                </Box>
-                            </Paper>
-                        </Grow>
-                    ))}
+                    <div>
+                        {props.certs.length > 1 ? (
+                            <Box display="flex">
+                                {props.certs.map((cert, index) => (
+                                    <div>
+                                        {isEven(index) ? (
+                                            <div>
+                                                <Slide
+                                                    in={props.visible}
+                                                    direction='left'
+                                                    key={cert}
+                                                    {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
+                                                >
+                                                    <Paper className="certificateContainer">
+                                                        <Box className="certificateCard">
+                                                            <img
+                                                                alt={cert}
+                                                                src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                            />
+                                                        </Box>
+                                                    </Paper>
+                                                </Slide>
+                                            </div>
+                                        ) : (
+                                            <div>
+                                                <Slide
+                                                    in={props.visible}
+                                                    direction='right'
+                                                    key={cert}
+                                                    {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
+                                                >
+                                                    <Paper className="certificateContainer">
+                                                        <Box className="certificateCard">
+                                                            <img
+                                                                alt={cert}
+                                                                src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                            />
+                                                        </Box>
+                                                    </Paper>
+                                                </Slide>
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
+                            </Box>
+                        ) : (
+                            <div>
+                                {props.certs.map((cert, index) => (
+                                    <Grow
+                                        in={props.visible}
+                                        key={cert}
+                                        {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
+                                    >
+                                        <Paper className="certificateContainer">
+                                            <Box className="certificateCard">
+                                                <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                    <img
+                                                        alt={cert}
+                                                        src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                        className='imageCard'
+                                                    />
+                                                </a>
+                                            </Box>
+                                        </Paper>
+                                    </Grow>
+                                ))}
+                            </div>
+                        )}
+                    </div>
                 </Box>
             )}
         </Box>

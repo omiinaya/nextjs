@@ -32,7 +32,7 @@ export default function App() {
         />
       </div>
       <Certifications />
-      <div name='Projects'>
+      <div name='Portfolio'>
         <Separator
           text='PERSONAL PROJECTS' mt={66} mb={10} mobilemt={130} mobilemb={7}
         />
