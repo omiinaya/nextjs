@@ -4,9 +4,9 @@ import Home from '../components/Home'
 import Skills from '../components/Skills'
 import Box from '@mui/material/Box';
 import Separator from '../components/Separator'
+import Certifications from '../components/Certifications'
 
 export default function App() {
-  //const [tab, setTab] = useState(false)
   return (
     <Box display="inline-block">
       <Head>
@@ -25,10 +25,12 @@ export default function App() {
         />
       </div>
       <Skills />
-      <Separator
-        text='BADGES & CERTIFICATIONS' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
-        name='Certificates'
-      />
+      <div name='Skills'>
+        <Separator
+          text='BADGES & CERTIFICATIONS' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
+        />
+      </div>
+      <Certifications />
     </Box>
   )
 }
