@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import VisibilitySensor from 'react-visibility-sensor';
 import Certificate from './Certificate';
 
-export default function SimpleGrow() {
+export default function Certifications() {
     const [visible1, setVisible1] = useState(false);
     const [visible2, setVisible2] = useState(false);
     const [visible3, setVisible3] = useState(false);

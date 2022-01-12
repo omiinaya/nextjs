@@ -5,7 +5,7 @@ import Home from '../components/Home'
 import Skills from '../components/Skills'
 import Box from '@mui/material/Box';
 import Separator from '../components/Separator'
-//import Certifications from '../components/Certifications'
+import Certifications from '../components/Certifications'
 import Fade from '@mui/material/Fade';
 
 export default function App() {
@@ -33,14 +33,12 @@ export default function App() {
         />
       </div>
       <Skills />
-      {/*
       <div name='Certifications'>
         <Separator
           text='BADGES / CERTIFICATIONS' mt={15} mb={15} mobilemt={28} mobilemb={5}
         />
       </div>
       <Certifications />
-      */}
     </Box>
   )
 }
