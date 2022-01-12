@@ -7,6 +7,7 @@ export default function Certificate(props) {
     function isEven(num) {
         return num % 2
     }
+    console.log(props)
     return (
         <Box>
             {props.mobile ? (
@@ -19,7 +20,7 @@ export default function Certificate(props) {
                                 {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                             >
                                 <Paper className="certificateContainer">
-                                    <Box className="certificateCard">
+                                    <Box className="certificateCard certificateCardDouble">
                                         <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
                                             <img
                                                 alt={cert}
@@ -34,23 +35,48 @@ export default function Certificate(props) {
                     </Box>
                     <Box sx={{ display: 'flex' }}>
                         {props.certs.slice(props.certs.length / 2, props.certs.length).map((cert, index) => (
-                            <Grow
-                                in={props.visible}
-                                key={cert}
-                                {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
-                            >
-                                <Paper className="certificateContainer">
-                                    <Box className="certificateCard">
-                                        <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
-                                            <img
-                                                alt={cert}
-                                                src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                                className='imageCard'
-                                            />
-                                        </a>
-                                    </Box>
-                                </Paper>
-                            </Grow>
+                            <div>
+                                {props.certs[index] != 'FullStack' ? (
+                                    <div><Grow
+                                        in={props.visible}
+                                        key={cert}
+                                        {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
+                                    >
+                                        <Paper className="certificateContainer">
+                                            <Box className="certificateCard certificateCardDouble">
+                                                <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                    <img
+                                                        alt={cert}
+                                                        src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                        className='imageCard'
+                                                    />
+                                                </a>
+                                            </Box>
+                                        </Paper>
+                                    </Grow></div>
+                                ) : (
+                                    <div>
+                                        <Grow
+                                            in={props.visible}
+                                            key={cert}
+                                            {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
+                                        >
+                                            <Paper className="certificateContainer">
+                                                <Box className="certificateCard">
+                                                    <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                        <img
+                                                            alt={cert}
+                                                            src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                            className='imageCard'
+                                                        />
+                                                    </a>
+                                                </Box>
+                                            </Paper>
+                                        </Grow>
+                                    </div>
+                                )}
+
+                            </div>
                         ))}
                     </Box>
                 </Box>
