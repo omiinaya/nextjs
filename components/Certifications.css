@@ -12,6 +12,12 @@
     
 }
 
-.certificateCard img {
-    
+.certificateCardDouble {
+
+}
+
+.certificateCardDouble img {
+    border: 5px solid forestgreen;
+    box-shadow:
+    0 0 0 5px hsl(0, 0%, 90%);
 }

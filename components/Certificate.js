@@ -70,7 +70,7 @@ export default function Certificate(props) {
                                                     {...(props.visible ? { timeout: 500 } : {})}
                                                 >
                                                     <Paper className="certificateContainer">
-                                                        <Box className="certificateCard">
+                                                        <Box className="certificateCard certificateCardDouble">
                                                             <img
                                                                 alt={cert}
                                                                 src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
@@ -88,7 +88,7 @@ export default function Certificate(props) {
                                                     {...(props.visible ? { timeout: 500 } : {})}
                                                 >
                                                     <Paper className="certificateContainer">
-                                                        <Box className="certificateCard">
+                                                        <Box className="certificateCard certificateCardDouble">
                                                             <img
                                                                 alt={cert}
                                                                 src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
