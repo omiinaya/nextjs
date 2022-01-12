@@ -1,32 +1,29 @@
 .rootCertifications {
-
 }
 
 .certificateContainer {
-    margin: 15px;    
+    margin: 15px;
     background-color: transparent !important;
     border-radius: 3px;
 }
 
 .certificateCard {
-    
 }
 
 .certificateCardDouble {
-    background-color: white;
+    background-image: -webkit-radial-gradient(circle, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
     padding: 15px;
     padding-bottom: 10px;
-    box-shadow: 0 0 0 4px rgb(235,220,150, 0.50);
-    
+    box-shadow: 0 0 0 4px rgb(235, 220, 150, 0.5);
 }
 
 .certificateCardDouble img {
-    margin-top: -15px;
+    background-color: white;
     height: 245px;
     width: 350px;
     overflow: hidden;
 }
 
 .certificateCardDoublex {
-    background-image: -webkit-radial-gradient(circle, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    background-image: -webkit-radial-gradient(circle, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
 }
