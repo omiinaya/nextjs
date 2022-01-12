@@ -11,11 +11,10 @@ import Scroll from 'react-scroll';
 
 const scroll = Scroll.animateScroll;
 const scroller = Scroll.scroller;
-const pages = ['Home', 'Skills', 'Certificates', 'Portfolio', 'Contact Me'];
+const pages = ['Home', 'Skills', 'Certifications', 'Portfolio', 'Contact Me'];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const [visible, setVisible] = useState(false)
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -63,9 +62,6 @@ export default function NavBar() {
           >
             <IconButton
               size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
             >

@@ -31,8 +31,7 @@
     -webkit-border-radius: 50% !important;
     -moz-border-radius: 50% !important;
     -khtml-border-radius: 50% !important;
-    box-shadow:
-    0 0 0 5px hsl(0, 0%, 90%);
+    box-shadow: 0 0 0 5px hsl(0, 0%, 90%);
 }
 
 .avatarBorder img {
