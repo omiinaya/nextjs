@@ -115,7 +115,7 @@ export default function Certificate(props) {
                                     >
                                         <Paper className="certificateContainer">
                                             <Box className="certificateCard">
-                                                <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                <a href="https://www.credential.net/f0cf59e9-957e-4e02-8763-c8d26ff7967c#gs.m4olob" target="_blank">
                                                     <img
                                                         alt={cert}
                                                         src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
