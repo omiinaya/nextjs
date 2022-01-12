@@ -22,7 +22,7 @@ export default function Cards(props) {
                             >
                                 <Paper className="rootCardContainer">
                                     <Box className="rootCard">
-                                        <img
+                                        <Image
                                             alt={card}
                                             src={`https://omiinaya.sirv.com/Images/${card}.webp`}
                                             className='imageCard'
@@ -50,7 +50,7 @@ export default function Cards(props) {
                             >
                                 <Paper className="rootCardContainer">
                                     <Box className="rootCard">
-                                        <img
+                                        <Image
                                             alt={card}
                                             src={`https://omiinaya.sirv.com/Images/${card}.webp`}
                                             className='imageCard'
