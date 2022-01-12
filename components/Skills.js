@@ -71,7 +71,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                         justifyContent='center'
                     >
-                        <Cards cards={cards3} visible={visible3} mobile={false}/>
+                        <Cards cards={cards3} visible={visible3} mobile={false} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
