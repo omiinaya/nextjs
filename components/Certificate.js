@@ -16,7 +16,7 @@ export default function Certificate(props) {
                         {props.certs.slice(0, props.certs.length / 2).map((cert, index) => (
                             <Grow
                                 in={props.visible}
-                                key={cert}
+                                key={cert+index}
                                 {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                             >
                                 <Paper className="certificateContainer">
@@ -25,7 +25,7 @@ export default function Certificate(props) {
                                             <img
                                                 alt={cert}
                                                 src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                                className='imageCard'
+                                                className='certificateCard'
                                             />
                                         </a>
                                     </Box>
@@ -39,7 +39,7 @@ export default function Certificate(props) {
                                 {props.certs[index] != 'FullStack' ? (
                                     <div><Grow
                                         in={props.visible}
-                                        key={cert}
+                                        key={cert+index}
                                         {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
                                     >
                                         <Paper className="certificateContainer">
@@ -48,7 +48,7 @@ export default function Certificate(props) {
                                                     <img
                                                         alt={cert}
                                                         src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                                        className='imageCard'
+                                                        className='certificateCard'
                                                     />
                                                 </a>
                                             </Box>
@@ -58,7 +58,7 @@ export default function Certificate(props) {
                                     <div>
                                         <Grow
                                             in={props.visible}
-                                            key={cert}
+                                            key={cert+index}
                                             {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
                                         >
                                             <Paper className="certificateContainer">
@@ -67,7 +67,7 @@ export default function Certificate(props) {
                                                         <img
                                                             alt={cert}
                                                             src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                                            className='imageCard'
+                                                            className='certificateCard'
                                                         />
                                                     </a>
                                                 </Box>
@@ -92,7 +92,7 @@ export default function Certificate(props) {
                                                 <Slide
                                                     in={props.visible}
                                                     direction='left'
-                                                    key={cert}
+                                                    key={cert+index}
                                                     {...(props.visible ? { timeout: 500 } : {})}
                                                 >
                                                     <Paper className="certificateContainer">
@@ -112,7 +112,7 @@ export default function Certificate(props) {
                                                 <Slide
                                                     in={props.visible}
                                                     direction='right'
-                                                    key={cert}
+                                                    key={cert+index}
                                                     {...(props.visible ? { timeout: 500 } : {})}
                                                 >
                                                     <Paper className="certificateContainer">
@@ -136,7 +136,7 @@ export default function Certificate(props) {
                                 {props.certs.map((cert, index) => (
                                     <Grow
                                         in={props.visible}
-                                        key={cert}
+                                        key={cert+index}
                                         {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                                     >
                                         <Paper className="certificateContainer">
@@ -145,7 +145,7 @@ export default function Certificate(props) {
                                                     <img
                                                         alt={cert}
                                                         src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                                        className='imageCard'
+                                                        className='certificateCard'
                                                     />
                                                 </a>
                                             </Box>
