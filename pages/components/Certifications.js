@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Box from '@mui/material/Box';
-import Cards from './Cards';
 import VisibilitySensor from 'react-visibility-sensor';
 import Certificate from './Certificate';
 
@@ -8,9 +7,11 @@ export default function SimpleGrow() {
     const [visible1, setVisible1] = useState(false);
     const [visible2, setVisible2] = useState(false);
     const [visible3, setVisible3] = useState(false);
+    const [visible4, setVisible4] = useState(false);
     const cards1 = ['FullStack']
     const cards2 = ['React', 'JavaScript']
     const cards3 = ['HTML', 'CSS']
+    const cards4 = ['Node', 'Git']
 
     return (
         <Box>
@@ -85,6 +86,29 @@ export default function SimpleGrow() {
                         justifyContent='center'
                     >
                         <Certificate certs={cards3} visible={visible3} mobile={true} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    //partialVisibility={true}
+                    onChange={(e) => { if (e) setVisible4(e) }}
+                >
+                    <Box
+                        display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
+                        justifyContent='center'
+                    >
+                        <Certificate certs={cards4} visible={visible4} mobile={false} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    partialVisibility={true}
+                    offset={{ top: -50 }}
+                    onChange={(e) => { if (e) setVisible4(e) }}
+                >
+                    <Box
+                        display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
+                        justifyContent='center'
+                    >
+                        <Certificate certs={cards4} visible={visible4} mobile={true} />
                     </Box>
                 </VisibilitySensor>
             </Box>

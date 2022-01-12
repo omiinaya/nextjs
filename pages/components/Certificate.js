@@ -34,7 +34,7 @@ export default function Cards(props) {
                             <Grow
                                 in={props.visible}
                                 key={card}
-                                {...(props.visible ? { timeout: (index + 4) * 500 } : {})}
+                                {...(props.visible ? { timeout: (index + 3) * 500 } : {})}
                             >
                                 <Paper className="certificateContainer">
                                     <Box className="certificateCard">
