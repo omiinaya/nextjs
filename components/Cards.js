@@ -4,6 +4,7 @@ import Grow from '@mui/material/Grow';
 import Image from 'next/image'
 
 export default function Cards(props) {
+    //console.log(src={`https://omiinaya.sirv.com/Images/${card}.webp`})
     return (
         <Box>
             {props.mobile ? (
@@ -23,7 +24,7 @@ export default function Cards(props) {
                                     <Box className="rootCard">
                                         <Image
                                             alt={card}
-                                            src={props.x[`${card}`].default.src}
+                                            src={`https://omiinaya.sirv.com/Images/${card}.webp`}
                                             className='imageCard'
                                             width={75}
                                             height={75}
@@ -51,7 +52,7 @@ export default function Cards(props) {
                                     <Box className="rootCard">
                                         <Image
                                             alt={card}
-                                            src={props.x[`${card}`].default.src}
+                                            src={`https://omiinaya.sirv.com/Images/${card}.webp`}
                                             className='imageCard'
                                             width={75}
                                             height={75}
@@ -79,9 +80,9 @@ export default function Cards(props) {
                         >
                             <Paper className="rootCardContainer">
                                 <Box className="rootCard">
-                                    <Image
+                                    <img
                                         alt={card}
-                                        src={props.x[`${card}`].default.src}
+                                        src={`https://omiinaya.sirv.com/Images/${card}.webp`}
                                         className='imageCard'
                                         width={70}
                                         height={70}

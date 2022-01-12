@@ -26,7 +26,7 @@ export default function App() {
       </div>
       <Skills />
       <Separator
-        text='BADGES & CERTIFICATES' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
+        text='BADGES & CERTIFICATIONS' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
         name='Certificates'
       />
     </Box>

@@ -9,7 +9,6 @@ module.exports = withSourceMaps({
         sourceMap: true
       })]
     }
-
     return config
   }
 })
