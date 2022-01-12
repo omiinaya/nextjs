@@ -59,7 +59,6 @@ export default function Certificate(props) {
                                     <img
                                         alt={cert}
                                         src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                        className='imageCard'
                                     />
                                 </Box>
                             </Paper>
