@@ -21,13 +21,13 @@ export default function App() {
       <Home />
       <div name='Skills'>
         <Separator
-          text='RELEVANT SKILLS' mt={15} mb={15} mobilemt={5} mobilemb={5}
+          text='RELEVANT SKILLS' mt={15} mb={10} mobilemt={5} mobilemb={5}
         />
       </div>
       <Skills />
-      <div name='Skills'>
+      <div name='Certifications'>
         <Separator
-          text='BADGES & CERTIFICATIONS' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
+          text='BADGES & CERTIFICATIONS' mt={15} mb={5} mobilemt={23.5} mobilemb={1}
         />
       </div>
       <Certifications />

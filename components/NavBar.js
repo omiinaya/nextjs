@@ -11,7 +11,7 @@ import Scroll from 'react-scroll';
 
 const scroll = Scroll.animateScroll;
 const scroller = Scroll.scroller;
-const pages = ['Home', 'Skills', 'Certificates', 'Portfolio', 'Contact Me'];
+const pages = ['Home', 'Skills', 'Certifications', 'Portfolio', 'Contact Me'];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -109,7 +109,7 @@ export default function NavBar() {
               key={page}
               onClick={() => {
                 if (page != 'Home') {
-                  scrollTo(page, -230)
+                  scrollTo(page, -200)
                 } else {
                   scrollToTop()
                 }

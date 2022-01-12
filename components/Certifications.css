@@ -5,8 +5,13 @@
 .certificateContainer {
     margin: 15px;    
     background-color: transparent !important;
+    border-radius: 3px;
 }
 
 .certificateCard {
+    
+}
+
+.certificateCard img {
     
 }
