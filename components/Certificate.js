@@ -67,7 +67,7 @@ export default function Certificate(props) {
                                                     in={props.visible}
                                                     direction='left'
                                                     key={cert}
-                                                    {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
+                                                    {...(props.visible ? { timeout: 500 } : {})}
                                                 >
                                                     <Paper className="certificateContainer">
                                                         <Box className="certificateCard">
@@ -85,7 +85,7 @@ export default function Certificate(props) {
                                                     in={props.visible}
                                                     direction='right'
                                                     key={cert}
-                                                    {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
+                                                    {...(props.visible ? { timeout: 500 } : {})}
                                                 >
                                                     <Paper className="certificateContainer">
                                                         <Box className="certificateCard">
@@ -107,7 +107,7 @@ export default function Certificate(props) {
                                     <Grow
                                         in={props.visible}
                                         key={cert}
-                                        {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
+                                        {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                                     >
                                         <Paper className="certificateContainer">
                                             <Box className="certificateCard">
