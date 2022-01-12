@@ -1,16 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
-import VisibilitySensor from 'react-visibility-sensor';
+import Project from '../components/Project'
+import axios from 'axios';
+//import VisibilitySensor from 'react-visibility-sensor';
 
 export default function Projects() {
-    const [v1, setV1] = useState(false);
-    const [v2, setV2] = useState(false);
-    const certs1 = ['FullStack']
-    const certs2 = ['React', 'JavaScript']
+    const [projects, setProjects] = useState([])
+
+    const getRepos = () => {
+        axios.get(`https://api.github.com/users/omiinaya/repos?per_page=100`)
+            .then(res => {
+                setProjects(res.data)
+            })
+    }
+
+    useEffect(() => {
+        getRepos()
+    }, []);
+
+    useEffect(() => {
+        console.log(projects)
+    }, [projects]);
 
     return (
-        <Box>
-            test
+        <Box
+            display='flex'
+            justifyContent='center'
+        >
+            {projects.length > 1 && <Project projects={projects} />}
         </Box>
     );
 }

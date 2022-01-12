@@ -34,10 +34,10 @@ export default function App() {
       <Certifications />
       <div name='Projects'>
         <Separator
-          text='PERSONAL PROJECTS' mt={15} mb={5} mobilemt={130} mobilemb={7}
+          text='PERSONAL PROJECTS' mt={66} mb={10} mobilemt={130} mobilemb={7}
         />
       </div>
-      <Projects />
+      {/*<Projects />*/}
     </Box>
   )
 }
