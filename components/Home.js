@@ -3,8 +3,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Fade from '@mui/material/Fade';
 import Slide from '@mui/material/Slide';
-import Image from 'next/image'
-import AvatarImage from "../public/static/imgs/avatar.webp"
 
 export default function Home() {
     const [upper, setUpper] = useState(false);
@@ -42,7 +40,7 @@ export default function Home() {
                 <Box className='avatarContainer'>
                     <img
                         alt="Omar Minaya"
-                        src={AvatarImage.src}
+                        src={'https://omiinaya.sirv.com/Images/avatar.webp'}
                         className='avatarBorder'
                         width={260}
                         height={260}

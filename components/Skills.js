@@ -3,14 +3,6 @@ import Box from '@mui/material/Box';
 import Cards from './Cards';
 import VisibilitySensor from 'react-visibility-sensor';
 
-function importAll(r) {
-    let images = {};
-    r.keys().forEach((item, index) => { images[item.replace('./', '').replace('.webp', '')] = r(item); });
-    return images
-}
-
-const images = importAll(require.context('../public/static/imgs/icons/', false, /\.(webp|jpe?g|svg)$/))
-
 export default function SimpleGrow() {
     const [visible1, setVisible1] = useState(false);
     const [visible2, setVisible2] = useState(false);
@@ -33,7 +25,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                         justifyContent='center'
                     >
-                        <Cards cards={cards1} visible={visible1} mobile={false} x={images} />
+                        <Cards cards={cards1} visible={visible1} mobile={false} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -45,7 +37,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
                         justifyContent='center'
                     >
-                        <Cards cards={cards1} visible={visible1} mobile={true} x={images} />
+                        <Cards cards={cards1} visible={visible1} mobile={true} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -56,7 +48,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                         justifyContent='center'
                     >
-                        <Cards cards={cards2} visible={visible2} mobile={false} x={images} />
+                        <Cards cards={cards2} visible={visible2} mobile={false} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -68,7 +60,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
                         justifyContent='center'
                     >
-                        <Cards cards={cards2} visible={visible2} mobile={true} x={images} />
+                        <Cards cards={cards2} visible={visible2} mobile={true} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -79,7 +71,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                         justifyContent='center'
                     >
-                        <Cards cards={cards3} visible={visible3} mobile={false} x={images} />
+                        <Cards cards={cards3} visible={visible3} mobile={false} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -91,7 +83,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
                         justifyContent='center'
                     >
-                        <Cards cards={cards3} visible={visible3} mobile={true} x={images} />
+                        <Cards cards={cards3} visible={visible3} mobile={true} />
                     </Box>
                 </VisibilitySensor>
             </Box>
