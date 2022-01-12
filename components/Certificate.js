@@ -16,11 +16,13 @@ export default function Certificate(props) {
                             >
                                 <Paper className="certificateContainer">
                                     <Box className="certificateCard">
-                                        <img
-                                            alt={cert}
-                                            src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                            className='imageCard'
-                                        />
+                                        <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                            <img
+                                                alt={cert}
+                                                src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                className='imageCard'
+                                            />
+                                        </a>
                                     </Box>
                                 </Paper>
                             </Grow>
@@ -35,11 +37,13 @@ export default function Certificate(props) {
                             >
                                 <Paper className="certificateContainer">
                                     <Box className="certificateCard">
-                                        <img
-                                            alt={cert}
-                                            src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                            className='imageCard'
-                                        />
+                                        <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                            <img
+                                                alt={cert}
+                                                src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                className='imageCard'
+                                            />
+                                        </a>
                                     </Box>
                                 </Paper>
                             </Grow>
