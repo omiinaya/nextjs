@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import NavBar from '../components/NavBar'
-import Home from '../components/Home'
-import Skills from '../components/Skills'
+import NavBar from './components/NavBar'
+import Home from './components/Home'
+import Skills from './components/Skills'
 import Box from '@mui/material/Box';
-import Separator from '../components/Separator'
+import Separator from './components/Separator'
 
 export default function App() {
   //const [tab, setTab] = useState(false)
@@ -25,10 +25,11 @@ export default function App() {
         />
       </div>
       <Skills />
-      <Separator
-        text='BADGES & CERTIFICATIONS' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
-        name='Certificates'
-      />
+      <div name='Certificates'>
+        <Separator
+          text='BADGES & CERTIFICATIONS' mt={15} mb={15} mobilemt={23.5} mobilemb={23.5}
+        />
+      </div>
     </Box>
   )
 }
