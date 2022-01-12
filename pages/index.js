@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react';
-import NavBar from './components/NavBar'
-import Home from './components/Home'
-import Skills from './components/Skills'
+import NavBar from '../components/NavBar'
+import Home from '../components/Home'
+import Skills from '../components/Skills'
 import Box from '@mui/material/Box';
-import Separator from './components/Separator'
-import Certifications from './components/Certifications'
+import Separator from '../components/Separator'
+import Certifications from '../components/Certifications'
 import Fade from '@mui/material/Fade';
 
 export default function App() {

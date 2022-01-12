@@ -8,10 +8,10 @@ export default function SimpleGrow() {
     const [visible2, setVisible2] = useState(false);
     const [visible3, setVisible3] = useState(false);
     const [visible4, setVisible4] = useState(false);
-    const cards1 = ['FullStack']
-    const cards2 = ['React', 'JavaScript']
-    const cards3 = ['HTML', 'CSS']
-    const cards4 = ['Node', 'Git']
+    const certs1 = ['FullStack']
+    const certs2 = ['React', 'JavaScript']
+    const certs3 = ['HTML', 'CSS']
+    const certs4 = ['Node', 'Git']
 
     return (
         <Box>
@@ -27,7 +27,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                         justifyContent='center'
                     >
-                        <Certificate certs={cards1} visible={visible1} mobile={false}/>
+                        <Certificate certs={certs1} visible={visible1} mobile={false}/>
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -39,7 +39,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
                         justifyContent='center'
                     >
-                        <Certificate certs={cards1} visible={visible1} mobile={true}/>
+                        <Certificate certs={certs1} visible={visible1} mobile={true}/>
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -50,7 +50,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                         justifyContent='center'
                     >
-                        <Certificate certs={cards2} visible={visible2} mobile={false}/>
+                        <Certificate certs={certs2} visible={visible2} mobile={false}/>
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -62,7 +62,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
                         justifyContent='center'
                     >
-                        <Certificate certs={cards2} visible={visible2} mobile={true}/>
+                        <Certificate certs={certs2} visible={visible2} mobile={true}/>
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -73,7 +73,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                         justifyContent='center'
                     >
-                        <Certificate certs={cards3} visible={visible3} mobile={false} />
+                        <Certificate certs={certs3} visible={visible3} mobile={false} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -85,7 +85,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
                         justifyContent='center'
                     >
-                        <Certificate certs={cards3} visible={visible3} mobile={true} />
+                        <Certificate certs={certs3} visible={visible3} mobile={true} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -96,7 +96,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                         justifyContent='center'
                     >
-                        <Certificate certs={cards4} visible={visible4} mobile={false} />
+                        <Certificate certs={certs4} visible={visible4} mobile={false} />
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
@@ -108,7 +108,7 @@ export default function SimpleGrow() {
                         display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
                         justifyContent='center'
                     >
-                        <Certificate certs={cards4} visible={visible4} mobile={true} />
+                        <Certificate certs={certs4} visible={visible4} mobile={true} />
                     </Box>
                 </VisibilitySensor>
             </Box>
