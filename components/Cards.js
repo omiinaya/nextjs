@@ -1,10 +1,8 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grow from '@mui/material/Grow';
-import Image from 'next/image'
 
 export default function Cards(props) {
-    //console.log(src={`https://omiinaya.sirv.com/Images/${card}.webp`})
     return (
         <Box>
             {props.mobile ? (
@@ -15,7 +13,6 @@ export default function Cards(props) {
                                 in={props.visible}
                                 key={card}
                                 style={{
-                                    //transformOrigin: '0 0 0',
                                     transform: `translateY(${(index + 0) * 30}px)`
                                 }}
                                 {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
@@ -43,7 +40,6 @@ export default function Cards(props) {
                                 in={props.visible}
                                 key={card}
                                 style={{
-                                    //transformOrigin: '0 0 0',
                                     transform: `translateY(${(index + 0) * 30}px)`
                                 }}
                                 {...(props.visible ? { timeout: (index + 4) * 500 } : {})}
@@ -73,7 +69,6 @@ export default function Cards(props) {
                             in={props.visible}
                             key={card}
                             style={{
-                                //transformOrigin: '0 0 0',
                                 transform: `translateY(${(index + 0) * 30}px)`
                             }}
                             {...(props.visible ? { timeout: (index + 1) * 500 } : {})}

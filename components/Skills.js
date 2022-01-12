@@ -16,7 +16,6 @@ export default function SimpleGrow() {
             <Box
                 sx={{ height: { xs: '900px', sm: '900px', md: '645px', lg: '645px' } }}>
                 <VisibilitySensor
-                    //partialVisibility={true}
                     onChange={(e) => {
                         if (e) setVisible1(e)
                     }}
@@ -29,7 +28,6 @@ export default function SimpleGrow() {
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
-                    //partialVisibility={true}
                     offset={{ bottom: -175 }}
                     onChange={(e) => { if (e) setVisible1(e) }}
                 >
@@ -41,7 +39,6 @@ export default function SimpleGrow() {
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
-                    //partialVisibility={true}
                     onChange={(e) => { if (e) setVisible2(e) }}
                 >
                     <Box
@@ -64,7 +61,6 @@ export default function SimpleGrow() {
                     </Box>
                 </VisibilitySensor>
                 <VisibilitySensor
-                    //partialVisibility={true}
                     onChange={(e) => { if (e) setVisible3(e) }}
                 >
                     <Box
