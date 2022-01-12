@@ -13,11 +13,12 @@
 }
 
 .certificateCardDouble {
-
+    background-image: -webkit-radial-gradient(circle, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    padding: 15px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 0 4px rgb(235,220,150, 0.50);
 }
 
 .certificateCardDouble img {
-    border: 5px solid forestgreen;
-    box-shadow:
-    0 0 0 5px hsl(0, 0%, 90%);
+    
 }

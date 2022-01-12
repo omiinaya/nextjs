@@ -71,10 +71,12 @@ export default function Certificate(props) {
                                                 >
                                                     <Paper className="certificateContainer">
                                                         <Box className="certificateCard certificateCardDouble">
-                                                            <img
-                                                                alt={cert}
-                                                                src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                                            />
+                                                            <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                                <img
+                                                                    alt={cert}
+                                                                    src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                                />
+                                                            </a>
                                                         </Box>
                                                     </Paper>
                                                 </Slide>
@@ -89,10 +91,12 @@ export default function Certificate(props) {
                                                 >
                                                     <Paper className="certificateContainer">
                                                         <Box className="certificateCard certificateCardDouble">
-                                                            <img
-                                                                alt={cert}
-                                                                src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
-                                                            />
+                                                            <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                                <img
+                                                                    alt={cert}
+                                                                    src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
+                                                                />
+                                                            </a>
                                                         </Box>
                                                     </Paper>
                                                 </Slide>
