@@ -7,7 +7,7 @@ export default function Certificate(props) {
     function isEven(num) {
         return num % 2
     }
-    
+
     return (
         <Box>
             {props.mobile ? (
@@ -16,12 +16,16 @@ export default function Certificate(props) {
                         {props.certs.slice(0, props.certs.length / 2).map((cert, index) => (
                             <Grow
                                 in={props.visible}
-                                key={cert+index+'x'}
+                                key={cert + index + 'x'}
                                 {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                             >
                                 <Paper className="certificateContainer">
                                     <Box className="certificateCard certificateCardDouble">
-                                        <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                        <a
+                                            href="https://www.linkedin.com/in/omar-minaya-a6b772198/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
                                             <img
                                                 alt={cert}
                                                 src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
@@ -35,7 +39,7 @@ export default function Certificate(props) {
                     </Box>
                     <Box sx={{ display: 'flex' }}>
                         {props.certs.slice(props.certs.length / 2, props.certs.length).map((cert, index) => (
-                            <div key={cert+index}>
+                            <div key={cert + index}>
                                 {props.certs[index] != 'FullStack' ? (
                                     <div><Grow
                                         in={props.visible}
@@ -43,7 +47,11 @@ export default function Certificate(props) {
                                     >
                                         <Paper className="certificateContainer">
                                             <Box className="certificateCard certificateCardDouble">
-                                                <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                <a
+                                                    href="https://www.linkedin.com/in/omar-minaya-a6b772198/"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
                                                     <img
                                                         alt={cert}
                                                         src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
@@ -57,12 +65,16 @@ export default function Certificate(props) {
                                     <div>
                                         <Grow
                                             in={props.visible}
-                                            key={cert+index+'z'}
+                                            key={cert + index + 'z'}
                                             {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
                                         >
                                             <Paper className="certificateContainer">
                                                 <Box>
-                                                    <a href="https://www.credential.net/f0cf59e9-957e-4e02-8763-c8d26ff7967c#gs.m4olob" target="_blank">
+                                                    <a
+                                                        href="https://www.credential.net/f0cf59e9-957e-4e02-8763-c8d26ff7967c#gs.m4olob"
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
                                                         <img
                                                             alt={cert}
                                                             src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
@@ -78,25 +90,29 @@ export default function Certificate(props) {
                             </div>
                         ))}
                     </Box>
-                </Box>
+                </Box >
             ) : (
                 <Box sx={{ display: 'flex' }}>
                     <div>
                         {props.certs.length > 1 ? (
                             <Box display="flex">
                                 {props.certs.map((cert, index) => (
-                                    <div key={cert+index}>
+                                    <div key={cert + index}>
                                         {isEven(index) ? (
                                             <div>
                                                 <Slide
                                                     in={props.visible}
                                                     direction='left'
-                                                    key={cert+index}
+                                                    key={cert + index}
                                                     {...(props.visible ? { timeout: 500 } : {})}
                                                 >
                                                     <Paper className="certificateContainer">
                                                         <Box className="certificateCard certificateCardDouble">
-                                                            <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                            <a
+                                                                href="https://www.linkedin.com/in/omar-minaya-a6b772198/"
+                                                                target="_blank"
+                                                                rel="noreferrer"
+                                                            >
                                                                 <img
                                                                     alt={cert}
                                                                     src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
@@ -111,12 +127,16 @@ export default function Certificate(props) {
                                                 <Slide
                                                     in={props.visible}
                                                     direction='right'
-                                                    key={cert+index}
+                                                    key={cert + index}
                                                     {...(props.visible ? { timeout: 500 } : {})}
                                                 >
                                                     <Paper className="certificateContainer">
                                                         <Box className="certificateCard certificateCardDouble">
-                                                            <a href="https://www.linkedin.com/in/omar-minaya-a6b772198/" target="_blank">
+                                                            <a
+                                                                href="https://www.linkedin.com/in/omar-minaya-a6b772198/"
+                                                                target="_blank"
+                                                                rel="noreferrer"
+                                                            >
                                                                 <img
                                                                     alt={cert}
                                                                     src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
@@ -135,12 +155,16 @@ export default function Certificate(props) {
                                 {props.certs.map((cert, index) => (
                                     <Grow
                                         in={props.visible}
-                                        key={cert+index}
+                                        key={cert + index}
                                         {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                                     >
                                         <Paper className="certificateContainer">
                                             <Box>
-                                                <a href="https://www.credential.net/f0cf59e9-957e-4e02-8763-c8d26ff7967c#gs.m4olob" target="_blank">
+                                                <a
+                                                    href="https://www.credential.net/f0cf59e9-957e-4e02-8763-c8d26ff7967c#gs.m4olob"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
                                                     <img
                                                         alt={cert}
                                                         src={`https://omiinaya.sirv.com/Images/LinkedIn${cert}.webp`}
@@ -155,7 +179,8 @@ export default function Certificate(props) {
                         )}
                     </div>
                 </Box>
-            )}
-        </Box>
+            )
+            }
+        </Box >
     )
 }
