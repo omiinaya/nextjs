@@ -7,7 +7,7 @@ export default function Certificate(props) {
     function isEven(num) {
         return num % 2
     }
-    console.log(props)
+    
     return (
         <Box>
             {props.mobile ? (
@@ -16,7 +16,7 @@ export default function Certificate(props) {
                         {props.certs.slice(0, props.certs.length / 2).map((cert, index) => (
                             <Grow
                                 in={props.visible}
-                                key={cert+index}
+                                key={cert+index+'x'}
                                 {...(props.visible ? { timeout: (index + 1) * 500 } : {})}
                             >
                                 <Paper className="certificateContainer">
@@ -35,11 +35,10 @@ export default function Certificate(props) {
                     </Box>
                     <Box sx={{ display: 'flex' }}>
                         {props.certs.slice(props.certs.length / 2, props.certs.length).map((cert, index) => (
-                            <div>
+                            <div key={cert+index}>
                                 {props.certs[index] != 'FullStack' ? (
                                     <div><Grow
                                         in={props.visible}
-                                        key={cert+index}
                                         {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
                                     >
                                         <Paper className="certificateContainer">
@@ -58,7 +57,7 @@ export default function Certificate(props) {
                                     <div>
                                         <Grow
                                             in={props.visible}
-                                            key={cert+index}
+                                            key={cert+index+'z'}
                                             {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
                                         >
                                             <Paper className="certificateContainer">
@@ -86,7 +85,7 @@ export default function Certificate(props) {
                         {props.certs.length > 1 ? (
                             <Box display="flex">
                                 {props.certs.map((cert, index) => (
-                                    <div>
+                                    <div key={cert+index}>
                                         {isEven(index) ? (
                                             <div>
                                                 <Slide
