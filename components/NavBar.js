@@ -8,23 +8,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Scroll from 'react-scroll';
+import Drawer from './Drawer'
 
 const scroll = Scroll.animateScroll;
 const scroller = Scroll.scroller;
 const pages = ['Home', 'Skills', 'Certifications', 'Portfolio', 'Contact Me'];
 
 export default function NavBar() {
-  const [anchorElNav, setAnchorElNav] = useState(null);
-  const [visible, setVisible] = useState(false)
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
   function scrollToTop() {
     scroll.scrollToTop({
       smooth: true,
@@ -33,7 +23,6 @@ export default function NavBar() {
   }
 
   function scrollTo(name, offset) {
-    console.log(name)
     scroller.scrollTo(name, {
       smooth: true,
       duration: 450,
@@ -61,46 +50,7 @@ export default function NavBar() {
             }
           }}
           >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={() => {
-                  if (page != 'Home') {
-                    scrollTo(page, -150)
-                  } else {
-                    scrollToTop()
-                  }
-                }}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            <Drawer pages={pages} scrollTo={scrollTo} scrollToTop={scrollToTop} />
           </Box>
         </Box>
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
