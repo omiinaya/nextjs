@@ -45,20 +45,24 @@ export default function TemporaryDrawer(props) {
                             }
                         }
                     >
-                        <ListItemIcon>
-                            <div>{text === 'Skills' ? <HomeRepairServiceIcon /> :
-                                <div>{text === 'Certifications' ? <EmojiEventsIcon /> :
-                                    <div>{text === 'Portfolio' ? <WorkIcon /> :
-                                        <div>{text === 'Contact Me' ? <MailIcon /> : <HomeIcon />}</div>}
+                        <Box display="flex">
+                            <ListItemIcon>
+                                <div>{text === 'Skills' ? <HomeRepairServiceIcon style={{ fill: "white" }} /> :
+                                    <div>{text === 'Certifications' ? <EmojiEventsIcon style={{ fill: "white" }} /> :
+                                        <div>{text === 'Portfolio' ? <WorkIcon style={{ fill: "white" }} /> :
+                                            <div>{text === 'Contact Me' ? <MailIcon style={{ fill: "white" }} /> :
+                                                <HomeIcon style={{ fill: "white" }} />}
+                                            </div>}
+                                        </div>}
                                     </div>}
-                                </div>}
-                            </div>
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
+                                </div>
+                            </ListItemIcon>
+                            <div>{text}</div>
+                        </Box>
                     </ListItem>
                 ))}
             </List>
-        </Box >
+        </Box>
     );
 
     return (
@@ -74,7 +78,11 @@ export default function TemporaryDrawer(props) {
                 >
                     <MenuIcon />
                 </IconButton>
-                <Drawer anchor={"left"} open={state} onClose={toggleDrawer(false)}>
+                <Drawer
+                    anchor={"left"}
+                    open={state}
+                    onClose={toggleDrawer(false)}
+                >
                     {list()}
                 </Drawer>
             </React.Fragment>

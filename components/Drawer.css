@@ -1,0 +1,6 @@
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+    background-color: transparent !important;
+    backdrop-filter: blur(100px) !important;
+    border-right: 2px solid white;
+    color: white;
+  }
