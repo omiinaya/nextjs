@@ -27,7 +27,7 @@ export default function Projects() {
     }, []);
     
     useEffect(() => {
-        console.log(pinned)
+        //console.log(pinned)
     }, [pinned]);
 
     return (

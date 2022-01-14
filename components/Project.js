@@ -1,8 +1,9 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Chip from '@material-ui/core/Chip';
 
 export default function Project(props) {
-    console.log(props.pinned)
+    //console.log(props.pinned)
     return (
         <Box>
             {props.pinned.map((project, index) => (
@@ -16,7 +17,7 @@ export default function Project(props) {
                                 <Box className="Project">
                                     <Box
                                         sx={{
-                                            width: { xs: '310px', sm: '320px' },
+                                            width: { xs: '320px', sm: '320px' },
                                             height: { xs: '200px', sm: '200px' },
                                         }}
                                     >
@@ -24,16 +25,38 @@ export default function Project(props) {
                                             alt='placeholder'
                                             src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
                                             className='placeholder'
-                                            width='310px'
+                                            width='340px'
                                             height='200px'
                                         />
                                     </Box>
                                     <Box
                                         display='flex'
                                         justifyContent='center'
-                                        mt={1}
+                                        mt={2}
                                     >
                                         {project.name}
+                                    </Box>
+                                    <Box
+                                        display='flex'
+                                        justifyContent='center'
+                                        m={1}
+                                        height='30px'
+                                        textAlign='center'
+                                    >
+                                        {project.topics.map((topic) => (
+                                            <div key={topic} style={{ margin: '5px' }}>
+                                                <Chip label={topic} />
+                                            </div>
+                                        ))}
+                                    </Box>
+                                    <Box
+                                        display='flex'
+                                        justifyContent='center'
+                                        m={1}
+                                        height='50px'
+                                        textAlign='center'
+                                    >
+                                        {project.description}
                                     </Box>
                                     <Box
                                         display='flex'
@@ -87,6 +110,26 @@ export default function Project(props) {
                                         mt={1}
                                     >
                                         {project.name}
+                                    </Box>
+                                    <Box
+                                        display='flex'
+                                        justifyContent='center'
+                                        m={1}
+                                        height='50px'
+                                        textAlign='center'
+                                    >
+                                        {project.topics.map((topic) => (
+                                            <div key={topic} style={{ margin: '10px' }}>
+                                                <Chip label={topic} />
+                                            </div>
+                                        ))}
+                                    </Box>
+                                    <Box
+                                        display='flex'
+                                        justifyContent='center'
+                                        mt={1}
+                                    >
+                                        {project.description}
                                     </Box>
                                     <Box
                                         display='flex'

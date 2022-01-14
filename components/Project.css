@@ -2,6 +2,7 @@
     background: transparent;
     backdrop-filter: blur(10px) !important;
     border: 3px solid white !important;
+    margin: 15px;
     margin-bottom: 30px;
 }
 
