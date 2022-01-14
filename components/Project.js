@@ -5,7 +5,14 @@ export default function Project(props) {
         <Box>
             {props.projects.map((project, index) => (
                 <div key={project.name}>
-                    {project.ame}
+                    <Box>
+                        <a
+                            href={project.html_url}
+                            target="_blank"
+                            rel="noreferrer">
+                            {project.name}
+                        </a>
+                    </Box>
                 </div>
             ))}
         </Box>

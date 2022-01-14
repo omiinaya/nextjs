@@ -27,7 +27,7 @@ export default function Projects() {
             display='flex'
             justifyContent='center'
         >
-            {projects.length > 1 && <Project projects={projects} />}
+            {projects.length > 0 && <Project projects={projects} />}
         </Box>
     );
 }
