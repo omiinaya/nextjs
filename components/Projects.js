@@ -5,27 +5,30 @@ import axios from 'axios';
 //import VisibilitySensor from 'react-visibility-sensor';
 
 export default function Projects() {
+    const [pinned, setPinned] = useState([])
     const [projects, setProjects] = useState([])
+
+    const pin = ['node-sysutil', 'react-tetris', 'realtime-ocr', 'limo-app']
+    const filtered = ['react-portfolio', 'omiinaya']
 
     const getRepos = () => {
         axios.get(`https://api.github.com/users/omiinaya/repos?per_page=100`)
             .then(res => {
-                setProjects(res.data)
+                var data = res.data
+                var repos = data.filter(repo => !filtered.includes(repo.name))
+                var favorites = data.filter(repo => pin.includes(repo.name))
+                setPinned(favorites)
+                setProjects(repos)
             })
     }
 
     useEffect(() => {
         getRepos()
     }, []);
-
-    {/*
+    
     useEffect(() => {
-        console.log(projects)
-    }, [projects]);
-    */}
-
-    const pinned = ['node-sysutil', 'react-tetris', 'realtime-ocr', 'limo-app']
-    const filtered = ['react-portfolio']
+        console.log(pinned)
+    }, [pinned]);
 
     return (
         <Box>

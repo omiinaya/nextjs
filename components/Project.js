@@ -1,12 +1,11 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Image from 'next/image';
 
 export default function Project(props) {
-    console.log(props)
+    console.log(props.pinned)
     return (
         <Box>
-            {props.projects.map((project, index) => (
+            {props.pinned.map((project, index) => (
                 <div key={project.name}>
                     <Box className="ProjectContainer"
                         display='flex'
