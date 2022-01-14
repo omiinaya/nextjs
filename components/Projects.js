@@ -28,11 +28,37 @@ export default function Projects() {
     const filtered = ['react-portfolio']
 
     return (
-        <Box
-            display='flex'
-            justifyContent='center'
-        >
-            {projects.length > 0 && <Project projects={projects} pinned={pinned} filtered={filtered} />}
+        <Box>
+            <Box
+                justifyContent='center'
+                sx={{
+                    display: { xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' },
+                }}
+            >
+                {projects.length > 0 &&
+                    <Project
+                        projects={projects}
+                        pinned={pinned}
+                        filtered={filtered}
+                        mobile={false}
+                    />
+                }
+            </Box>
+            <Box
+                justifyContent='center'
+                sx={{
+                    display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' },
+                }}
+            >
+                {projects.length > 0 &&
+                    <Project
+                        projects={projects}
+                        pinned={pinned}
+                        filtered={filtered}
+                        mobile={true}
+                    />
+                }
+            </Box>
         </Box>
     );
 }

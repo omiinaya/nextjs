@@ -1,9 +1,10 @@
 .ProjectContainer {
-    height: 500px;
-    width: 800px;
     background: transparent;
     backdrop-filter: blur(10px) !important;
     border: 3px solid white !important;
     margin-bottom: 30px;
-    padding: 30px;
+}
+
+.Project {
+    margin: 30px;
 }

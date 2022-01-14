@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Image from 'next/image';
 
 export default function Project(props) {
     console.log(props)
@@ -11,50 +12,113 @@ export default function Project(props) {
                         display='flex'
                         justifyContent='center'
                     >
-                        <Box className="Project">
-                            <Box>
-                                <img
-                                    alt='placeholder'
-                                    src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
-                                    className='placeholder'
-                                    width={730}
-                                    height={360}
-                                />
-                            </Box>
-                            <Box
-                                display='flex'
-                                justifyContent='center'
-                            >
-                                {project.name}
-                            </Box>
-                            <Box
-                                display='flex'
-                                justifyContent='center'
-                            >
-                                <a
-                                    href={project.html_url}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    style={{ 
-                                        marginRight: '7px',
-                                        marginTop: '7px'
-                                     }}
-                                >
-                                    <Button color='primary' variant="contained">View Source</Button>
-                                </a>
-                                <a
-                                    href={project.html_url}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    style={{ 
-                                        marginLeft: '7px',
-                                        marginTop: '7px'
-                                    }}
-                                >
-                                    <Button color='primary' variant="contained">Deployment</Button>
-                                </a>
-                            </Box>
-                        </Box>
+                        {props.mobile ? (
+                            <div>
+                                <Box className="Project">
+                                    <Box
+                                        sx={{
+                                            width: { xs: '300px', sm: '300px' },
+                                            height: { xs: '200px', sm: '200px' },
+                                        }}
+                                    >
+                                        <img
+                                            alt='placeholder'
+                                            src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
+                                            className='placeholder'
+                                            width='300px'
+                                            height='200px'
+                                        />
+                                    </Box>
+                                    <Box
+                                        display='flex'
+                                        justifyContent='center'
+                                        mt={1}
+                                    >
+                                        {project.name}
+                                    </Box>
+                                    <Box
+                                        display='flex'
+                                        justifyContent='center'
+                                    >
+                                        <a
+                                            href={project.html_url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            style={{
+                                                marginRight: '7px',
+                                                marginTop: '14px'
+                                            }}
+                                        >
+                                            <Button color='primary' variant="contained">View Source</Button>
+                                        </a>
+                                        <a
+                                            href={project.html_url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            style={{
+                                                marginLeft: '7px',
+                                                marginTop: '14px'
+                                            }}
+                                        >
+                                            <Button disabled color='primary' variant="contained">Deployment</Button>
+                                        </a>
+                                    </Box>
+                                </Box>
+                            </div>
+                        ) : (
+                            <div>
+                                <Box className="Project">
+                                    <Box
+                                        sx={{
+                                            width: { md: '730px', lg: '730px', xl: '730px' },
+                                            height: { md: '360px', lg: '360px', xl: '360px' },
+                                        }}
+                                    >
+                                        <img
+                                            alt='placeholder'
+                                            src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
+                                            className='placeholder'
+                                            width='730px'
+                                            height='360px'
+                                        />
+                                    </Box>
+                                    <Box
+                                        display='flex'
+                                        justifyContent='center'
+                                        mt={1}
+                                    >
+                                        {project.name}
+                                    </Box>
+                                    <Box
+                                        display='flex'
+                                        justifyContent='center'
+                                    >
+                                        <a
+                                            href={project.html_url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            style={{
+                                                marginRight: '7px',
+                                                marginTop: '14px'
+                                            }}
+                                        >
+                                            <Button color='primary' variant="contained">View Source</Button>
+                                        </a>
+                                        <a
+                                            href={project.html_url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            style={{
+                                                marginLeft: '7px',
+                                                marginTop: '14px'
+                                            }}
+                                        >
+                                            <Button disabled color='primary' variant="contained">Deployment</Button>
+                                        </a>
+                                    </Box>
+                                </Box>
+                            </div>
+                        )}
                     </Box>
                 </div>
             ))}
