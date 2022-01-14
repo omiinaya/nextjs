@@ -8,7 +8,7 @@ export default function Projects() {
     const [pinned, setPinned] = useState([])
     const [projects, setProjects] = useState([])
 
-    const pin = ['node-sysutil', 'react-tetris', 'realtime-ocr', 'limo-app']
+    const pin = ['servant-app', 'limo-app', 'react-tetris', 'weather-dash', 'project1-bookmamba', 'pwd-gen']
     const filtered = ['react-portfolio', 'omiinaya']
 
     const getRepos = () => {

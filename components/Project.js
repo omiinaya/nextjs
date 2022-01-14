@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Chip from '@material-ui/core/Chip';
 
 export default function Project(props) {
-    //console.log(props.pinned)
+    console.log(props.pinned)
     return (
         <Box>
             {props.pinned.map((project, index) => (
@@ -55,12 +55,12 @@ export default function Project(props) {
                                             <Button color='primary' variant="contained">View Source</Button>
                                         </a>
                                         <a
-                                            href={project.html_url}
+                                            href={project.homepage}
                                             target="_blank"
                                             rel="noreferrer"
                                             style={{ margin: '7px' }}
                                         >
-                                            <Button color='primary' variant="contained">Deployment</Button>
+                                            <Button color='primary' variant="contained">View Live</Button>
                                         </a>
                                     </Box>
                                 </Box>
@@ -130,7 +130,7 @@ export default function Project(props) {
 
                                             }}
                                         >
-                                            <Button color='primary' variant="contained">Deployment</Button>
+                                            <Button color='primary' variant="contained">View Live</Button>
                                         </a>
                                     </Box>
                                 </Box>
