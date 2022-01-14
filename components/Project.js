@@ -17,7 +17,7 @@ export default function Project(props) {
                                 <Box className="Project">
                                     <Box
                                         sx={{
-                                            width: { xs: '300px', sm: '300px' },
+                                            width: { xs: '310px', sm: '320px' },
                                             height: { xs: '200px', sm: '200px' },
                                         }}
                                     >
@@ -25,7 +25,7 @@ export default function Project(props) {
                                             alt='placeholder'
                                             src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
                                             className='placeholder'
-                                            width='300px'
+                                            width='310px'
                                             height='200px'
                                         />
                                     </Box>
