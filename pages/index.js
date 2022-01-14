@@ -32,14 +32,12 @@ export default function App() {
         />
       </div>
       <Certifications />
-      {/*
       <div name='Portfolio'>
         <Separator
           text='PERSONAL PROJECTS' mt={78} mb={10} mobilemt={130} mobilemb={7}
         />
       </div>
       <Projects />
-      */}
     </Box>
   )
 }

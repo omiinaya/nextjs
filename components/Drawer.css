@@ -1,13 +1,13 @@
 .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
     background-color: transparent !important;
-    backdrop-filter: blur(100px) !important;
+    backdrop-filter: blur(10px) !important;
     border-right: 2px solid white !important;
     color: white !important;
 }
 
 .css-wf16b5 {
     background-color: transparent !important;
-    backdrop-filter: blur(100px) !important;
+    backdrop-filter: blur(10px) !important;
     border-right: 2px solid white !important;
     color: white !important;
 }
