@@ -60,7 +60,7 @@ export default function Project(props) {
                                                 marginTop: '14px'
                                             }}
                                         >
-                                            <Button disabled color='primary' variant="contained">Deployment</Button>
+                                            <Button color='primary' variant="contained">Deployment</Button>
                                         </a>
                                     </Box>
                                 </Box>
@@ -113,7 +113,7 @@ export default function Project(props) {
                                                 marginTop: '14px'
                                             }}
                                         >
-                                            <Button disabled color='primary' variant="contained">Deployment</Button>
+                                            <Button color='primary' variant="contained">Deployment</Button>
                                         </a>
                                     </Box>
                                 </Box>

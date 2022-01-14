@@ -34,7 +34,7 @@ export default function App() {
       <Certifications />
       <div name='Portfolio'>
         <Separator
-          text='PERSONAL PROJECTS' mt={78} mb={10} mobilemt={155} mobilemb={3}
+          text='PERSONAL PROJECTS' mt={58} mb={5} mobilemt={125} mobilemb={3}
         />
       </div>
       <Projects />
