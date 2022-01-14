@@ -13,17 +13,32 @@ export default function Project(props) {
                     >
                         <Box className="Project">
                             <Box>
-                                {'Image'}
+                                <img
+                                    alt='placeholder'
+                                    src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
+                                    className='placeholder'
+                                    width={730}
+                                    height={360}
+                                />
                             </Box>
-                            <Box>
+                            <Box
+                                display='flex'
+                                justifyContent='center'
+                            >
                                 {project.name}
                             </Box>
-                            <Box>
+                            <Box
+                                display='flex'
+                                justifyContent='center'
+                            >
                                 <a
                                     href={project.html_url}
                                     target="_blank"
                                     rel="noreferrer"
-                                    style={{ marginRight: '7px'}}
+                                    style={{ 
+                                        marginRight: '7px',
+                                        marginTop: '7px'
+                                     }}
                                 >
                                     <Button color='primary' variant="contained">View Source</Button>
                                 </a>
@@ -31,7 +46,10 @@ export default function Project(props) {
                                     href={project.html_url}
                                     target="_blank"
                                     rel="noreferrer"
-                                    style={{ marginLeft: '7px'}}
+                                    style={{ 
+                                        marginLeft: '7px',
+                                        marginTop: '7px'
+                                    }}
                                 >
                                     <Button color='primary' variant="contained">Deployment</Button>
                                 </a>
