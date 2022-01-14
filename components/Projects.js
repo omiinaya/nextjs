@@ -18,16 +18,21 @@ export default function Projects() {
         getRepos()
     }, []);
 
+    {/*
     useEffect(() => {
         console.log(projects)
     }, [projects]);
+    */}
+
+    const pinned = ['node-sysutil', 'react-tetris', 'realtime-ocr', 'limo-app']
+    const filtered = ['react-portfolio']
 
     return (
         <Box
             display='flex'
             justifyContent='center'
         >
-            {projects.length > 0 && <Project projects={projects} />}
+            {projects.length > 0 && <Project projects={projects} pinned={pinned} filtered={filtered} />}
         </Box>
     );
 }
