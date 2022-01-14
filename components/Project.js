@@ -8,52 +8,36 @@ export default function Project(props) {
         <Box>
             {props.pinned.map((project, index) => (
                 <div key={project.name}>
-                    <Box className="ProjectContainer"
-                        display='flex'
-                        justifyContent='center'
-                    >
+                    <Box className="ProjectRoot">
                         {props.mobile ? (
-                            <div>
+                            <Box className="ProjectContainer">
                                 <Box className="Project">
-                                    <Box
-                                        sx={{
-                                            width: { xs: '320px', sm: '320px' },
-                                            height: { xs: '200px', sm: '200px' },
-                                        }}
-                                    >
+                                    <Box>
                                         <img
                                             alt='placeholder'
                                             src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
-                                            className='placeholder'
-                                            width='340px'
-                                            height='200px'
+                                            width='355px'
+                                            height='210px'
+                                            
                                         />
                                     </Box>
                                     <Box
                                         display='flex'
                                         justifyContent='center'
-                                        mt={2}
                                     >
                                         {project.name}
                                     </Box>
-                                    <Box
-                                        display='flex'
-                                        justifyContent='center'
-                                        m={1}
-                                        height='30px'
-                                        textAlign='center'
+                                    <div style={{ display: 'flex', justifyContent: 'center' }}
                                     >
                                         {project.topics.map((topic) => (
-                                            <div key={topic} style={{ margin: '5px' }}>
+                                            <div key={topic} style={{ margin: '2px' }}>
                                                 <Chip label={topic} />
                                             </div>
                                         ))}
-                                    </Box>
+                                    </div>
                                     <Box
                                         display='flex'
                                         justifyContent='center'
-                                        m={1}
-                                        height='50px'
                                         textAlign='center'
                                     >
                                         {project.description}
@@ -66,10 +50,7 @@ export default function Project(props) {
                                             href={project.html_url}
                                             target="_blank"
                                             rel="noreferrer"
-                                            style={{
-                                                marginRight: '7px',
-                                                marginTop: '14px'
-                                            }}
+                                            style={{ margin: '7px' }}
                                         >
                                             <Button color='primary' variant="contained">View Source</Button>
                                         </a>
@@ -77,16 +58,13 @@ export default function Project(props) {
                                             href={project.html_url}
                                             target="_blank"
                                             rel="noreferrer"
-                                            style={{
-                                                marginLeft: '7px',
-                                                marginTop: '14px'
-                                            }}
+                                            style={{ margin: '7px' }}
                                         >
                                             <Button color='primary' variant="contained">Deployment</Button>
                                         </a>
                                     </Box>
                                 </Box>
-                            </div>
+                            </Box>
                         ) : (
                             <div>
                                 <Box className="Project">
@@ -107,15 +85,12 @@ export default function Project(props) {
                                     <Box
                                         display='flex'
                                         justifyContent='center'
-                                        mt={1}
                                     >
                                         {project.name}
                                     </Box>
                                     <Box
                                         display='flex'
                                         justifyContent='center'
-                                        m={1}
-                                        height='50px'
                                         textAlign='center'
                                     >
                                         {project.topics.map((topic) => (
@@ -127,7 +102,7 @@ export default function Project(props) {
                                     <Box
                                         display='flex'
                                         justifyContent='center'
-                                        mt={1}
+                                        sx={{ margin: '7px' }}
                                     >
                                         {project.description}
                                     </Box>
@@ -140,8 +115,8 @@ export default function Project(props) {
                                             target="_blank"
                                             rel="noreferrer"
                                             style={{
-                                                marginRight: '7px',
-                                                marginTop: '14px'
+                                                margin: '7px',
+
                                             }}
                                         >
                                             <Button color='primary' variant="contained">View Source</Button>
@@ -151,8 +126,8 @@ export default function Project(props) {
                                             target="_blank"
                                             rel="noreferrer"
                                             style={{
-                                                marginLeft: '7px',
-                                                marginTop: '14px'
+                                                margin: '7px',
+
                                             }}
                                         >
                                             <Button color='primary' variant="contained">Deployment</Button>

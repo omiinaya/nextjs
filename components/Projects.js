@@ -35,7 +35,7 @@ export default function Projects() {
             <Box
                 justifyContent='center'
                 sx={{
-                    display: { xs: 'none', sm: 'none', md: 'flex', lg: 'flex', xl: 'flex' },
+                    display: { xs: 'none', sm: 'flex', md: 'flex', lg: 'flex', xl: 'flex' },
                 }}
             >
                 {projects.length > 0 &&
@@ -50,7 +50,7 @@ export default function Projects() {
             <Box
                 justifyContent='center'
                 sx={{
-                    display: { xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' },
+                    display: { xs: 'flex', sm: 'none', md: 'none', lg: 'none', xl: 'none' },
                 }}
             >
                 {projects.length > 0 &&
