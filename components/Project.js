@@ -15,7 +15,7 @@ export default function Project(props) {
                                     <Box>
                                         <img
                                             alt='placeholder'
-                                            src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
+                                            src={`https://omiinaya.sirv.com/Images/portfolio/placeholder.webp`}
                                             width='355px'
                                             height='210px'
                                             
@@ -76,7 +76,7 @@ export default function Project(props) {
                                     >
                                         <img
                                             alt='placeholder'
-                                            src={`https://omiinaya.sirv.com/Images/placeholder.webp`}
+                                            src={`https://omiinaya.sirv.com/Images/portfolio/placeholder.webp`}
                                             className='placeholder'
                                             width='730px'
                                             height='360px'
