@@ -2,6 +2,7 @@
     margin: 5px !important;
     background-color: transparent !important;
     backdrop-filter: blur(10px) !important;
+    background-color: transparent !important;
 }
 
 .rootCard {
@@ -9,13 +10,14 @@
     height: 155px;
     justify-content: center;
     text-align: center;
-    background-color: transparent !important;
     padding-top: 25px;
     color: white;
     border: 3px solid white;
+    background-color: transparent !important;
 }
 
 .imageCard {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    background-color: transparent !important;
 }

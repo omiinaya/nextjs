@@ -28,7 +28,7 @@ export default function Certificate(props) {
                                         >
                                             <img
                                                 alt={cert}
-                                                src={`https://omiinaya.sirv.com/Images/portfolio/LinkedIn${cert}.webp`}
+                                                src={`https://omiinaya.sirv.com//Images/backup/LinkedIn${cert}.webp`}
                                                 className='certificateCard'
                                             />
                                         </a>
@@ -54,7 +54,7 @@ export default function Certificate(props) {
                                                 >
                                                     <img
                                                         alt={cert}
-                                                        src={`https://omiinaya.sirv.com/Images/portfolio/LinkedIn${cert}.webp`}
+                                                        src={`https://omiinaya.sirv.com//Images/backup/LinkedIn${cert}.webp`}
                                                         className='certificateCard'
                                                     />
                                                 </a>
@@ -77,7 +77,7 @@ export default function Certificate(props) {
                                                     >
                                                         <img
                                                             alt={cert}
-                                                            src={`https://omiinaya.sirv.com/Images/portfolio/LinkedIn${cert}.webp`}
+                                                            src={`https://omiinaya.sirv.com//Images/backup/LinkedIn${cert}.webp`}
                                                             className='certificateCard'
                                                         />
                                                     </a>
@@ -115,7 +115,7 @@ export default function Certificate(props) {
                                                             >
                                                                 <img
                                                                     alt={cert}
-                                                                    src={`https://omiinaya.sirv.com/Images/portfolio/LinkedIn${cert}.webp`}
+                                                                    src={`https://omiinaya.sirv.com//Images/backup/LinkedIn${cert}.webp`}
                                                                 />
                                                             </a>
                                                         </Box>
@@ -139,7 +139,7 @@ export default function Certificate(props) {
                                                             >
                                                                 <img
                                                                     alt={cert}
-                                                                    src={`https://omiinaya.sirv.com/Images/portfolio/LinkedIn${cert}.webp`}
+                                                                    src={`https://omiinaya.sirv.com//Images/backup/LinkedIn${cert}.webp`}
                                                                 />
                                                             </a>
                                                         </Box>
@@ -167,7 +167,7 @@ export default function Certificate(props) {
                                                 >
                                                     <img
                                                         alt={cert}
-                                                        src={`https://omiinaya.sirv.com/Images/portfolio/LinkedIn${cert}.webp`}
+                                                        src={`https://omiinaya.sirv.com//Images/backup/LinkedIn${cert}.webp`}
                                                         className='certificateCard'
                                                     />
                                                 </a>

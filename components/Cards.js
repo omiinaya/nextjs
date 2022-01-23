@@ -21,7 +21,7 @@ export default function Cards(props) {
                                     <Box className="rootCard">
                                         <img
                                             alt={card}
-                                            src={`https://omiinaya.sirv.com/Images/portfolio/${card}.webp`}
+                                            src={`https://omiinaya.sirv.com/Images/backup/${card}.webp`}
                                             className='imageCard'
                                             width={75}
                                             height={75}
@@ -48,7 +48,7 @@ export default function Cards(props) {
                                     <Box className="rootCard">
                                         <img
                                             alt={card}
-                                            src={`https://omiinaya.sirv.com/Images/portfolio/${card}.webp`}
+                                            src={`https://omiinaya.sirv.com/Images/backup/${card}.webp`}
                                             className='imageCard'
                                             width={75}
                                             height={75}
@@ -77,7 +77,7 @@ export default function Cards(props) {
                                 <Box className="rootCard">
                                     <img
                                         alt={card}
-                                        src={`https://omiinaya.sirv.com/Images/portfolio/${card}.webp`}
+                                        src={`https://omiinaya.sirv.com/Images/backup/${card}.webp`}
                                         className='imageCard'
                                         width={70}
                                         height={70}

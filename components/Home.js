@@ -40,7 +40,7 @@ export default function Home() {
                 <Box className='avatarContainer'>
                     <img
                         alt="Omar Minaya"
-                        src={'https://omiinaya.sirv.com/Images/portfolio/avatar.webp'}
+                        src={'https://omiinaya.sirv.com//Images/backup/avatar.webp'}
                         className='avatarBorder'
                         width={260}
                         height={260}
