@@ -5,7 +5,6 @@ import Skills from '../components/Skills'
 import Box from '@mui/material/Box';
 import Separator from '../components/Separator'
 import Certifications from '../components/Certifications'
-import Projects from '../components/Projects';
 
 export default function App() {
   return (
@@ -32,12 +31,6 @@ export default function App() {
         />
       </div>
       <Certifications />
-      <div name='Portfolio'>
-        <Separator
-          text='PERSONAL PROJECTS' mt={58} mb={5} mobilemt={125} mobilemb={3}
-        />
-      </div>
-      <Projects />
     </Box>
   )
 }

@@ -1,18 +1,12 @@
-import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import Scroll from 'react-scroll';
 import Drawer from './Drawer'
 
 const scroll = Scroll.animateScroll;
 const scroller = Scroll.scroller;
-const pages = ['Home', 'Skills', 'Certifications', 'Portfolio', 'Contact Me'];
+const pages = ['Home', 'Skills', 'Certifications', /*'Portfolio',*/ 'Contact Me'];
 
 export default function NavBar() {
   function scrollToTop() {
@@ -35,7 +29,7 @@ export default function NavBar() {
       <Toolbar>
         <Box sx={{ flexGrow: 1 }}>
           <Button
-            sx={{ my: 3, color: 'white', display: { xs: 'none', md: 'block' } }}
+            sx={{ my: 3, color: 'transparent' /*'white'*/, display: { xs: 'none', md: 'block' } }}
             onClick={() => {
               scrollToTop()
             }}
@@ -82,7 +76,7 @@ export default function NavBar() {
         </Box>
         <Box sx={{ flexGrow: 0 }}>
           <Button
-            sx={{ my: 3, color: 'white', display: 'block' }}
+            sx={{ my: 3, color: 'transparent' /*'white'*/, display: 'block' }}
           >
             END
           </Button>

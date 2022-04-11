@@ -33,7 +33,7 @@ export default function Home() {
                         mr: { xs: 'none', sm: 'none', md: '30px', lg: '100px', xl: '300px' },
                     }}
                 >
-                    I am a bilingual developer living in Miami, Florida. I was born in the Dominican Republic and my native language is Spanish. I studied Computer Science at Union University over in Jackson, Tennessee, then moved to Florida looking for IT opportunities. There I studied Web Development at University of Miami and fell in love with programming ever since.
+                    I am a bilingual developer living in Miami, Florida. I was born in the Dominican Republic and my native language is Spanish. I studied Information and Technology at Union University in Jackson, Tennessee, then moved to Florida looking for more career opportunities. I studied Web Development at University of Miami and fell in love with programming ever since.
                 </Typography>
             </Slide>
             <Slide direction="up" in={bottom} >
