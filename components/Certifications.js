@@ -8,10 +8,12 @@ export default function Certifications() {
     const [v2, setV2] = useState(false);
     const [v3, setV3] = useState(false);
     const [v4, setV4] = useState(false);
+    const [v5, setV5] = useState(false);
     const certs1 = ['FullStack']
-    const certs2 = ['React', 'JavaScript']
-    const certs3 = ['HTML', 'CSS']
-    const certs4 = ['Node', 'Git']
+    const certs2 = ['Comptiaa', 'Comptiaitf']
+    const certs3 = ['React', 'JavaScript']
+    const certs4 = ['HTML', 'CSS']
+    const certs5 = ['Node', 'Git']
 
     return (
         <Box>
@@ -104,6 +106,28 @@ export default function Certifications() {
                         justifyContent='center'
                     >
                         <Certificate certs={certs4} visible={v4} mobile={true} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    onChange={(e) => { if (e) setV5(e) }}
+                >
+                    <Box
+                        display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
+                        justifyContent='center'
+                    >
+                        <Certificate certs={certs5} visible={v5} mobile={false} />
+                    </Box>
+                </VisibilitySensor>
+                <VisibilitySensor
+                    partialVisibility={true}
+                    offset={{ top: -50 }}
+                    onChange={(e) => { if (e) setV5(e) }}
+                >
+                    <Box
+                        display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
+                        justifyContent='center'
+                    >
+                        <Certificate certs={certs5} visible={v5} mobile={true} />
                     </Box>
                 </VisibilitySensor>
             </Box>

@@ -22,7 +22,7 @@ export default function Certificate(props) {
                                 <Paper className="certificateContainer">
                                     <Box className="certificateCard certificateCardDouble">
                                         <a
-                                            href="https://www.linkedin.com/in/omar-minaya-a6b772198/"
+                                            href="https://www.linkedin.com/in/omiinaya/"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -41,26 +41,27 @@ export default function Certificate(props) {
                         {props.certs.slice(props.certs.length / 2, props.certs.length).map((cert, index) => (
                             <div key={cert + index}>
                                 {props.certs[index] != 'FullStack' ? (
-                                    <div><Grow
-                                        in={props.visible}
-                                        {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
-                                    >
-                                        <Paper className="certificateContainer">
-                                            <Box className="certificateCard certificateCardDouble">
-                                                <a
-                                                    href="https://www.linkedin.com/in/omar-minaya-a6b772198/"
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                >
-                                                    <img
-                                                        alt={cert}
-                                                        src={`https://omiinaya.sirv.com//Images/backup/LinkedIn${cert}.webp`}
-                                                        className='certificateCard'
-                                                    />
-                                                </a>
-                                            </Box>
-                                        </Paper>
-                                    </Grow></div>
+                                    <div>
+                                        <Grow
+                                            in={props.visible}
+                                            {...(props.visible ? { timeout: (index + 2) * 500 } : {})}
+                                        >
+                                            <Paper className="certificateContainer">
+                                                <Box className="certificateCard certificateCardDouble">
+                                                    <a
+                                                        href="https://www.linkedin.com/in/omiinaya/"
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                        <img
+                                                            alt={cert}
+                                                            src={`https://omiinaya.sirv.com//Images/backup/LinkedIn${cert}.webp`}
+                                                            className='certificateCard'
+                                                        />
+                                                    </a>
+                                                </Box>
+                                            </Paper>
+                                        </Grow></div>
                                 ) : (
                                     <div>
                                         <Grow
@@ -71,7 +72,7 @@ export default function Certificate(props) {
                                             <Paper className="certificateContainer">
                                                 <Box>
                                                     <a
-                                                        href="https://www.credential.net/f0cf59e9-957e-4e02-8763-c8d26ff7967c#gs.m4olob"
+                                                        href="https://www.linkedin.com/in/omiinaya/"
                                                         target="_blank"
                                                         rel="noreferrer"
                                                     >
@@ -109,7 +110,7 @@ export default function Certificate(props) {
                                                     <Paper className="certificateContainer">
                                                         <Box className="certificateCard certificateCardDouble">
                                                             <a
-                                                                href="https://www.linkedin.com/in/omar-minaya-a6b772198/"
+                                                                href="https://www.linkedin.com/in/omiinaya/"
                                                                 target="_blank"
                                                                 rel="noreferrer"
                                                             >
@@ -133,7 +134,7 @@ export default function Certificate(props) {
                                                     <Paper className="certificateContainer">
                                                         <Box className="certificateCard certificateCardDouble">
                                                             <a
-                                                                href="https://www.linkedin.com/in/omar-minaya-a6b772198/"
+                                                                href="https://www.linkedin.com/in/omiinaya/"
                                                                 target="_blank"
                                                                 rel="noreferrer"
                                                             >
@@ -161,7 +162,7 @@ export default function Certificate(props) {
                                         <Paper className="certificateContainer">
                                             <Box>
                                                 <a
-                                                    href="https://www.credential.net/f0cf59e9-957e-4e02-8763-c8d26ff7967c#gs.m4olob"
+                                                    href="https://www.linkedin.com/in/omiinaya/"
                                                     target="_blank"
                                                     rel="noreferrer"
                                                 >
