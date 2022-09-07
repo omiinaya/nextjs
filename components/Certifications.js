@@ -165,13 +165,15 @@ export default function Certifications() {
                     <Fade in={bottom}>
                         <Box display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }}
                             justifyContent='center'>
-                            <Typography textAlign='center' className='titleHome'>
-                                OMAR
-                            </Typography>
+                            <div name='Contact Me'>
+                                <Typography textAlign='center' className='titleHome'>
+                                    OMAR
+                                </Typography>
+                            </div>
                         </Box>
                     </Fade>
                 </VisibilitySensor>
-                 <VisibilitySensor
+                <VisibilitySensor
                     partialVisibility={true}
                     offset={{ top: -75 }}
                     onChange={(e) => { if (e) setBottom(e) }}
@@ -180,9 +182,11 @@ export default function Certifications() {
                         display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
                         justifyContent='center'
                     >
-                        <Typography textAlign='center' className='titleHome'>
+                        <div name='Contact Me'>
+                            <Typography textAlign='center' className='titleHome'>
                                 OMAR
                             </Typography>
+                        </div>
                     </Box>
                 </VisibilitySensor>
             </Box>
