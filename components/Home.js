@@ -33,7 +33,7 @@ export default function Home() {
                         mr: { xs: 'none', sm: 'none', md: '30px', lg: '100px', xl: '300px' },
                     }}
                 >
-                    I am a Full-Stack Software Engineer with a demonstrated history of working in the Information and Technology field. Skilled in JavaScript, Python and other programming languages.
+                    I am a Full-Stack Developer with a demonstrated history of working in the Information and Technology field. Skilled in JavaScript, Python and other programming languages.
                 </Typography>
             </Slide>
             <Slide direction="up" in={bottom} >
