@@ -6,7 +6,7 @@ import Drawer from './Drawer'
 
 const scroll = Scroll.animateScroll;
 const scroller = Scroll.scroller;
-const pages = ['Home', 'Skills', 'Certifications', /*'Portfolio',*/ 'Contact Me'];
+const pages = ['Home', 'Skills', 'WIP'/*'Certifications', 'Portfolio', 'Contact Me'*/];
 
 export default function NavBar() {
   function scrollToTop() {

@@ -173,22 +173,6 @@ export default function Certifications() {
                         </Box>
                     </Fade>
                 </VisibilitySensor>
-                <VisibilitySensor
-                    partialVisibility={true}
-                    offset={{ top: -75 }}
-                    onChange={(e) => { if (e) setBottom(e) }}
-                >
-                    <Box
-                        display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none' }}
-                        justifyContent='center'
-                    >
-                        <div name='Contact Me'>
-                            <Typography textAlign='center' className='titleHome'>
-                                OMAR
-                            </Typography>
-                        </div>
-                    </Box>
-                </VisibilitySensor>
             </Box>
         </Box>
     );
