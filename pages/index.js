@@ -9,7 +9,7 @@ import Separator from "../components/Separator";
 export default function App() {
   return (
     <div>
-      <Box display="inline-block">
+      <Box>
         <Head>
           <title>Omar Minaya</title>
           <meta
